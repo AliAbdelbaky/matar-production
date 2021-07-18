@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png">
+    <title>Airport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body> 
+    <div id="preloader">
+      <div data-loader="dual-ring"></div>
+    </div><span id="scrollTop"> <i class="fas fa-chevron-up"></i></span>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+           LOGO</div>
+        <ul class="list-item"> 
+          <li class="item"><a class="contact-us" href="tel:0100-000-0000"><strong>0100-000-0000</strong></a></li>
+          <li class="item">Arabic<i class="fa fa-chevron-down sm-p xs-hide"></i>
+            <ul class="dropdown-menu">
+              <li><a href="">Arabic</a></li>
+              <li> <a href="">English</a></li>
+            </ul>
+          </li>
+          <li class="item">Retrieve my booking</li>
+          <li class="item">
+             Currency<i class="fa fa-chevron-down sm-p xs-hide"></i>
+            <ul class="dropdown-menu">
+              <li><a href="">EGP</a></li>
+              <li> <a href="">SR</a></li>
+            </ul>
+          </li>
+          <li class="item signIn-btn">
+            <button>Sign in</button>
+          </li>
+        </ul>
+        <button class="humburger-btn"> <span> </span><span> </span><span></span></button>
+      </div>
+      <div class="mopile-list"> 
+        <ul class="nav-list">
+          <li class="nav-item"><a class="contact-us" href="tel:0100-000-0000"><strong>0100-000-0000</strong></a></li>
+          <li class="nav-item">Arabic<i class="fa fa-chevron-down sm-p xs-hide"></i>
+            <ul class="dropdown-menu">
+              <li><a href="">Arabic</a></li>
+              <li> <a href="">English</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">Retrieve my booking</li>
+          <li class="nav-item">
+             Currency<i class="fa fa-chevron-down sm-p xs-hide"></i>
+            <ul class="dropdown-menu">
+              <li><a href="">EGP</a></li>
+              <li> <a href="">SR</a></li>
+            </ul>
+          </li>
+          <li class="nav-item signIn-btn">
+            <button>Sign in</button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="RetrieveMyBooking-suppage"> 
+      <div class="con-btn">
+        <button class="close-btn">X Close</button>
+        <div class="content">
+          <h2>Retrieve your booking</h2>
+          <form action="submit"> 
+            <label for="input-email">Enter your email address </label>
+            <input type="email" id="input-email" autocomplete="email">
+            <p>The email address you used when you made your booking.</p>
+            <label for="input-text">Enter your Logo ID</label>
+            <input type="text" id="input-text">
+            <p>Your logo ID is the booking ID that was sent to your email address after you placed your booking.</p>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="sign-in" id="sign-in"> 
+      <div class="toggle-menu"> 
+        <div class="header"><a href="#">View full screen </a><i class="fas fa-times"></i></div>
+        <div class="info"> 
+          <h2>Sign in to your account!</h2>
+          <p>Get access to exclusive deals, save travellers’ details for quicker bookings and manage your upcoming bookings with ease!</p>
+        </div>
+        <div class="box"> 
+          <h2>Sign in using your:</h2><a class="facebook" href="https://www.facebook.com/login/reauth.php?app_id=133098687052106&amp;signed_next=1&amp;next=https%3A%2F%2Fwww.facebook.com%2Fv2.8%2Fdialog%2Foauth%3Fclient_id%3D133098687052106%26redirect_uri%3Dhttps%253A%252F%252Fwww.tajawal.com%252Fauth%252Fsocial%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D864844b1-2aec-4afb-9b09-1d98f4a28000%26tp%3Dunspecified&amp;cancel_url=https%3A%2F%2Fwww.tajawal.com%2Fauth%2Fsocial%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&amp;display=page&amp;locale=ar_AR&amp;pl_dbl=0">Facebook </a>
+          <div class="or"> 
+            <hr><span>OR</span>
+          </div>
+          <ul class="options">
+            <li class="active"> <i class="fas fa-envelope"></i>Email adress</li>
+            <li> <i class="fas fa-mobile-alt"></i>Mobile number</li>
+            <hr>
+          </ul>
+          <form action="submit" autocomplete="on">
+            <div class="email-addres active">
+              <label for="#email-input2">Email</label>
+              <input class="form-control" type="email" id="#email-input2" required="" autocomplete="on">
+            </div>
+            <div class="mobile-number">
+              <label for="#phone">Phone</label>
+              <input id="phone" name="phone" type="tel">
+            </div>
+            <label for="#pass-input2">Password</label>
+            <input class="form-control" type="password" id="#pass-input2" required="" autocomplete="on">
+            <button type="submit">Sign In</button>
+          </form><a class="forgot-password" href="">Forgot your password?</a>
+          <div class="dont-haveAccount text-center"><span>Don’t have an account?</span><a href="">Create an account</a></div>
+        </div>
+      </div>
+    </div>
+    <section class="content">
+      <div class="container-fluid"> 
+        <div class="window">
+          <div class="sidebar-window">
+            <div class="sidebar"> 
+              <div class="time-option text-center"><i class="far fa-clock"></i>
+                <div class="desc">Display times in <br><strong>AM / PM </strong>format</div>
+                <label class="switch">
+                  <input type="checkbox" checked><span class="slider"></span>
+                </label>
+              </div>
+              <div class="filter-your-result"> 
+                <div class="main-header"> 
+                  <h2>FILTER YOUR RESULTS</h2><span>9 flights found</span><span class="hide-sidbar"> <i class="fas fa-times"></i></span>
+                  <hr>
+                </div>
+                <div class="stops-section">
+                  <div class="header section-header"> 
+                    <h2>Stops</h2><i class="fas fa-chevron-up"></i>
+                  </div>
+                  <div class="options-list">
+                    <form class="form-one" action=""> 
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                        <label class="form-check-label" for="flexRadioDefault1">Any number of stops</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault2">Direct flight only</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault2">1 Stop or less</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault2">2 Stop or less</label>
+                      </div>
+                    </form>
+                  </div>
+                  <hr>
+                </div>
+                <div class="airelines-section">
+                  <div class="header section-header"> 
+                    <h2>Airlines</h2><i class="fas fa-chevron-up"></i>
+                  </div>
+                  <div class="options-list"> 
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">Royal Jordain</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">soudia</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">flynas</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">Mansoura</label>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="time-section">
+                  <div class="header section-header"> 
+                    <h2>Time</h2><i class="fas fa-chevron-up"></i>
+                  </div>
+                  <div class="options-list"> 
+                    <h2>FLY FROM MADINAH</h2>
+                    <form action=""> 
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">Before 06:00 AM</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">06:00 AM - 11:59 AM</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">12:00 PM - 06:00 PM</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <label class="form-check-label" for="flexCheckDefault">After 06:00 PM</label>
+                      </div>
+                    </form>
+                    <h2>ARRIVE IN CAIRO</h2>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">Before 06:00 AM</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">06:00 AM - 11:59 AM</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">12:00 PM - 06:00 PM</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">After 06:00 PM</label>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="price-section"> 
+                  <div class="header section-header"> 
+                    <h2>Price</h2><i class="fas fa-chevron-up"></i>
+                  </div>
+                  <div class="options-list"> 
+                    <div class="range"> 
+                      <div class="field"> 
+                        <input type="range" min="1000" max="3000" steps="1" value="3000">
+                        <div class="value left">min AED <span>1000</span></div>
+                        <div class="value right">max AED <span>3000</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="airports-section">
+                  <div class="header section-header"> 
+                    <h2>Airports</h2><i class="fas fa-chevron-up"></i>
+                  </div>
+                  <div class="options-list"> 
+                    <h2>FLY FROM MADINAH</h2>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">Prince Mohammad Bin Abdulaziz International Airport (MED)</label>
+                    </div>
+                    <h2>ARRIVE IN CAIRO</h2>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" for="flexCheckDefault">Cairo International Airport (CAI)</label>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+                <div class="baggage-section"> 
+                  <div class="header section-header"> 
+                    <h2>Airports</h2><i class="fas fa-chevron-up"></i>
+                  </div>
+                  <div class="options-list">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                      <label class="form-check-label" for="flexRadioDefault1">All baggage options</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault">
+                      <label class="form-check-label" for="flexRadioDefault2">Checked baggage included</label>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flight-info-window" style="overflow:hidden">
+            <div class="flightinfo"> 
+              <button class="toggle-sidebar"><i class="fas fa-exchange-alt"></i></button>
+              <div class="main-header"> 
+                <div class="from-section"> <span class="desc black">MED</span><span class="info">Madinah </span></div><i class="fas fa-arrow-right"></i>
+                <div class="to-section"> <span class="desc black">MED</span><span class="info">Madinah </span></div>
+                <div class="departure-section"><span class="desc">
+                     Departure</span><span class="info">Sun, 11/07</span></div>
+                <div class="passenger-section"> <span class="desc">Passengers </span><span class="info">
+                     1</span></div>
+                <div class="capin-section"> <span class="desc">Capin </span><span class="info">Economy</span></div>
+                <button class="modify-search">Modify search</button>
+              </div>
+              <hr>
+              <div class="quickly-filter-section">
+                <div class="container-fluid"> 
+                  <h2 class="header">
+                     Quickly filter your results:</h2>
+                  <div class="content">
+                    <div class="row"> 
+                      <div class="col-md-6">
+                        <div class="filter-pop"> <a href="">Direct</a><a href="">Checked baggage included</a></div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="show-pricingCalender"> <a href=""> <i class="far fa-calendar-alt"> </i>Show pricing calender<i class="fas fa-chevron-down"></i></a></div>
+                        <div class="search-menu"> 
+                          <div class="menu">
+                            <div class="header"> 
+                              <h6>MODIFY SEARCH </h6>
+                              <button class="cancel">Cancel</button>
+                            </div>
+                            <div class="nav-bar"> 
+                              <ul class="nav-list"> 
+                                <li class="nav-item active">One-way</li>
+                                <li class="nav-item">Round-trip</li>
+                                <li class="nav-item">Multi-city</li>
+                              </ul>
+                            </div>
+                            <div class="nav-container"> 
+                              <div class="menus">
+                                <div class="one-way menu active">
+                                  <div class="fly-to-from-section">
+                                    <div class="fly-to input-group">
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-gOhSNZ hJZzyW sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M50 1C22.9 1 1 22.9 1 50s21.9 49 49 49 49-21.9 49-49C99 23 77 1 50 1zm43.4 53.2C91.4 75 75 91.4 54.2 93.4l-1.5.2V73.3c0-1.5-1.2-2.7-2.7-2.7s-2.7 1.2-2.7 2.7v20.2l-1.5-.2C25 91.4 8.6 75 6.6 54.2l-.2-1.5h20.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H6.4l.2-1.5C8.6 25 25 8.6 45.8 6.6l1.5-.2v18.1c0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7V6.4l1.5.2C75 8.6 91.4 25 93.4 45.8l.2 1.5H75.5c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7h18.1l-.2 1.5z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control text-input" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                      <div class="toggle-menu">
+                                        <ul> 
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="fly-from input-group">
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-jRnjsG dkpoRr sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M68.8 5.5c-5-2.6-10.4-4.2-16-4.5H50C27.7 1 9.7 19.1 9.7 41.4c0 10.7 4.3 20.9 11.8 28.4l23.7 27c2.4 2.6 6.4 2.9 9.1.5l.5-.5 23.7-27c1.1-1.1 6.9-9.3 7.2-9.8 10.4-19.6 2.8-44.1-16.9-54.5zm15.1 38.1c-.5 6.6-2.9 13-6.9 18.2l-.1.2c-.9 1.2-1.9 2.3-2.9 3.3L50 92.6 26.1 65.4c-1-1-2-2.2-3-3.4-4.6-5.9-7-13.2-7-20.7 0-18.8 15.2-34 34-34 .8 0 1.6 0 2.4.1 18.7 1.3 32.7 17.5 31.4 36.2z"></path>
+                                          <path d="M50 22.9c-10.2 0-18.5 8.3-18.5 18.5S39.8 59.9 50 59.9s18.5-8.3 18.5-18.5c-.1-10.2-8.3-18.5-18.5-18.5zm0 30.5c-6.7 0-12.1-5.4-12.1-12.1S43.3 29.2 50 29.2s12.1 5.4 12.1 12.1c0 6.7-5.4 12.1-12.1 12.1z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control text-input" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                      <div class="toggle-menu">
+                                        <ul> 
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="date-container">
+                                    <div class="input-group"> 
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-kJdAmE fTuJME sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 150 150" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M91.1 71.2l23.5 18.9c1.1.9 1.7 2.2 1.7 3.6s-.6 2.7-1.8 3.6L91 115.8c-2 1.6-4.9 1.2-6.4-.8-1.6-2-1.2-4.9.8-6.4l13.1-10.3H37.8c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6h60.9L85.4 78.4c-1.9-1.7-2.1-4.6-.4-6.5 1.5-1.8 4.2-2.1 6.1-.7zM0 25.5v108c0 6.6 5.4 12 12 12h126c6.6 0 12-5.4 12-12v-108c0-6.6-5.4-12-12-12h-24v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H42v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H12c-6.6 0-12 5.4-12 12zm6 24h138v84c0 3.3-2.7 6-6 6H12c-3.3 0-6-2.7-6-6v-84zm0-24c0-3.3 2.7-6 6-6h24v6.8c-2.9 1.7-3.9 5.3-2.2 8.2 1.7 2.9 5.3 3.9 8.2 2.2 2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h66v6.8c-2.9 1.7-3.9 5.3-2.2 8.2s5.3 3.9 8.2 2.2c2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h24c3.3 0 6 2.7 6 6v18H6v-18z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="one form-control date-input" type="date" placeholder="Check In">
+                                    </div>
+                                    <div class="input-group">
+                                      <div class="two input-group-text" id="basic-addon1"> 
+                                        <svg class="sc-jBoNkH gTdONc sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M40.6 73.9c1.2 1 2.8.8 3.8-.3 1-1.2.8-2.8-.3-3.8l-.1-.1-7.7-6.1h35.6c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H36.1l7.8-6.3c1.2-1 1.4-2.6.4-3.8s-2.6-1.4-3.8-.4L26.8 58.8c-.6.5-1 1.3-1 2.2 0 .8.4 1.6 1 2.1l13.8 10.8z"></path>
+                                          <path d="M90.4 10.6H75V6.8c-.2-1.1-1.3-1.8-2.4-1.6-.8.2-1.4.8-1.6 1.6v3.8H28.8V6.8c-.2-1.1-1.3-1.8-2.4-1.6-.8.2-1.4.8-1.6 1.6v3.8H9.6C5.4 10.6 2 14 2 18.3v69.2c0 4.2 3.4 7.6 7.6 7.6h80.7c4.2 0 7.6-3.4 7.6-7.6V18.3c.1-4.3-3.3-7.7-7.5-7.7zm3.8 76.9c0 2.2-1.8 3.8-3.8 3.8H9.6c-2.2 0-3.8-1.8-3.8-3.8V33.6h88.4v53.9zm.1-57.7H5.8V18.3c0-2.2 1.8-3.8 3.8-3.8H25v4.4c-1.9 1.1-2.5 3.4-1.4 5.3s3.4 2.5 5.3 1.4 2.5-3.4 1.4-5.3c-.3-.6-.8-1.1-1.4-1.4v-4.4h42.3v4.4c-1.9 1.1-2.5 3.4-1.4 5.3s3.4 2.5 5.3 1.4 2.5-3.4 1.4-5.3c-.3-.6-.8-1.1-1.4-1.4v-4.4h15.4c2.2 0 3.8 1.8 3.8 3.8v11.5z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control date-input" type="date" placeholder="Check Out" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="round-trip menu">
+                                  <div class="fly-to-from-section">
+                                    <div class="fly-to input-group">
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-gOhSNZ hJZzyW sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M50 1C22.9 1 1 22.9 1 50s21.9 49 49 49 49-21.9 49-49C99 23 77 1 50 1zm43.4 53.2C91.4 75 75 91.4 54.2 93.4l-1.5.2V73.3c0-1.5-1.2-2.7-2.7-2.7s-2.7 1.2-2.7 2.7v20.2l-1.5-.2C25 91.4 8.6 75 6.6 54.2l-.2-1.5h20.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H6.4l.2-1.5C8.6 25 25 8.6 45.8 6.6l1.5-.2v18.1c0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7V6.4l1.5.2C75 8.6 91.4 25 93.4 45.8l.2 1.5H75.5c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7h18.1l-.2 1.5z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control text-input" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                      <div class="toggle-menu">
+                                        <ul> 
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="fly-from input-group">
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-jRnjsG dkpoRr sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M68.8 5.5c-5-2.6-10.4-4.2-16-4.5H50C27.7 1 9.7 19.1 9.7 41.4c0 10.7 4.3 20.9 11.8 28.4l23.7 27c2.4 2.6 6.4 2.9 9.1.5l.5-.5 23.7-27c1.1-1.1 6.9-9.3 7.2-9.8 10.4-19.6 2.8-44.1-16.9-54.5zm15.1 38.1c-.5 6.6-2.9 13-6.9 18.2l-.1.2c-.9 1.2-1.9 2.3-2.9 3.3L50 92.6 26.1 65.4c-1-1-2-2.2-3-3.4-4.6-5.9-7-13.2-7-20.7 0-18.8 15.2-34 34-34 .8 0 1.6 0 2.4.1 18.7 1.3 32.7 17.5 31.4 36.2z"></path>
+                                          <path d="M50 22.9c-10.2 0-18.5 8.3-18.5 18.5S39.8 59.9 50 59.9s18.5-8.3 18.5-18.5c-.1-10.2-8.3-18.5-18.5-18.5zm0 30.5c-6.7 0-12.1-5.4-12.1-12.1S43.3 29.2 50 29.2s12.1 5.4 12.1 12.1c0 6.7-5.4 12.1-12.1 12.1z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control text-input" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                      <div class="toggle-menu">
+                                        <ul> 
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="date-container">
+                                    <div class="input-group"> 
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-kJdAmE fTuJME sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 150 150" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M91.1 71.2l23.5 18.9c1.1.9 1.7 2.2 1.7 3.6s-.6 2.7-1.8 3.6L91 115.8c-2 1.6-4.9 1.2-6.4-.8-1.6-2-1.2-4.9.8-6.4l13.1-10.3H37.8c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6h60.9L85.4 78.4c-1.9-1.7-2.1-4.6-.4-6.5 1.5-1.8 4.2-2.1 6.1-.7zM0 25.5v108c0 6.6 5.4 12 12 12h126c6.6 0 12-5.4 12-12v-108c0-6.6-5.4-12-12-12h-24v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H42v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H12c-6.6 0-12 5.4-12 12zm6 24h138v84c0 3.3-2.7 6-6 6H12c-3.3 0-6-2.7-6-6v-84zm0-24c0-3.3 2.7-6 6-6h24v6.8c-2.9 1.7-3.9 5.3-2.2 8.2 1.7 2.9 5.3 3.9 8.2 2.2 2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h66v6.8c-2.9 1.7-3.9 5.3-2.2 8.2s5.3 3.9 8.2 2.2c2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h24c3.3 0 6 2.7 6 6v18H6v-18z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="one form-control date-input" type="date" placeholder="Check In">
+                                    </div>
+                                    <div class="input-group">
+                                      <div class="two input-group-text" id="basic-addon1"> 
+                                        <svg class="sc-jBoNkH gTdONc sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M40.6 73.9c1.2 1 2.8.8 3.8-.3 1-1.2.8-2.8-.3-3.8l-.1-.1-7.7-6.1h35.6c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H36.1l7.8-6.3c1.2-1 1.4-2.6.4-3.8s-2.6-1.4-3.8-.4L26.8 58.8c-.6.5-1 1.3-1 2.2 0 .8.4 1.6 1 2.1l13.8 10.8z"></path>
+                                          <path d="M90.4 10.6H75V6.8c-.2-1.1-1.3-1.8-2.4-1.6-.8.2-1.4.8-1.6 1.6v3.8H28.8V6.8c-.2-1.1-1.3-1.8-2.4-1.6-.8.2-1.4.8-1.6 1.6v3.8H9.6C5.4 10.6 2 14 2 18.3v69.2c0 4.2 3.4 7.6 7.6 7.6h80.7c4.2 0 7.6-3.4 7.6-7.6V18.3c.1-4.3-3.3-7.7-7.5-7.7zm3.8 76.9c0 2.2-1.8 3.8-3.8 3.8H9.6c-2.2 0-3.8-1.8-3.8-3.8V33.6h88.4v53.9zm.1-57.7H5.8V18.3c0-2.2 1.8-3.8 3.8-3.8H25v4.4c-1.9 1.1-2.5 3.4-1.4 5.3s3.4 2.5 5.3 1.4 2.5-3.4 1.4-5.3c-.3-.6-.8-1.1-1.4-1.4v-4.4h42.3v4.4c-1.9 1.1-2.5 3.4-1.4 5.3s3.4 2.5 5.3 1.4 2.5-3.4 1.4-5.3c-.3-.6-.8-1.1-1.4-1.4v-4.4h15.4c2.2 0 3.8 1.8 3.8 3.8v11.5z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control date-input" type="date" placeholder="Check Out">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="multi-trip menu">
+                                  <div class="fly-to-from-section">
+                                    <div class="fly-to input-group">
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-gOhSNZ hJZzyW sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M50 1C22.9 1 1 22.9 1 50s21.9 49 49 49 49-21.9 49-49C99 23 77 1 50 1zm43.4 53.2C91.4 75 75 91.4 54.2 93.4l-1.5.2V73.3c0-1.5-1.2-2.7-2.7-2.7s-2.7 1.2-2.7 2.7v20.2l-1.5-.2C25 91.4 8.6 75 6.6 54.2l-.2-1.5h20.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H6.4l.2-1.5C8.6 25 25 8.6 45.8 6.6l1.5-.2v18.1c0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7V6.4l1.5.2C75 8.6 91.4 25 93.4 45.8l.2 1.5H75.5c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7h18.1l-.2 1.5z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control text-input" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                      <div class="toggle-menu">
+                                        <ul> 
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="fly-from input-group">
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-jRnjsG dkpoRr sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M68.8 5.5c-5-2.6-10.4-4.2-16-4.5H50C27.7 1 9.7 19.1 9.7 41.4c0 10.7 4.3 20.9 11.8 28.4l23.7 27c2.4 2.6 6.4 2.9 9.1.5l.5-.5 23.7-27c1.1-1.1 6.9-9.3 7.2-9.8 10.4-19.6 2.8-44.1-16.9-54.5zm15.1 38.1c-.5 6.6-2.9 13-6.9 18.2l-.1.2c-.9 1.2-1.9 2.3-2.9 3.3L50 92.6 26.1 65.4c-1-1-2-2.2-3-3.4-4.6-5.9-7-13.2-7-20.7 0-18.8 15.2-34 34-34 .8 0 1.6 0 2.4.1 18.7 1.3 32.7 17.5 31.4 36.2z"></path>
+                                          <path d="M50 22.9c-10.2 0-18.5 8.3-18.5 18.5S39.8 59.9 50 59.9s18.5-8.3 18.5-18.5c-.1-10.2-8.3-18.5-18.5-18.5zm0 30.5c-6.7 0-12.1-5.4-12.1-12.1S43.3 29.2 50 29.2s12.1 5.4 12.1 12.1c0 6.7-5.4 12.1-12.1 12.1z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control text-input" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                      <div class="toggle-menu">
+                                        <ul> 
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                          <li>Cairo</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="date-container">
+                                    <div class="input-group"> 
+                                      <div class="input-group-text" id="basic-addon1">
+                                        <svg class="sc-kJdAmE fTuJME sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 150 150" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M91.1 71.2l23.5 18.9c1.1.9 1.7 2.2 1.7 3.6s-.6 2.7-1.8 3.6L91 115.8c-2 1.6-4.9 1.2-6.4-.8-1.6-2-1.2-4.9.8-6.4l13.1-10.3H37.8c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6h60.9L85.4 78.4c-1.9-1.7-2.1-4.6-.4-6.5 1.5-1.8 4.2-2.1 6.1-.7zM0 25.5v108c0 6.6 5.4 12 12 12h126c6.6 0 12-5.4 12-12v-108c0-6.6-5.4-12-12-12h-24v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H42v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H12c-6.6 0-12 5.4-12 12zm6 24h138v84c0 3.3-2.7 6-6 6H12c-3.3 0-6-2.7-6-6v-84zm0-24c0-3.3 2.7-6 6-6h24v6.8c-2.9 1.7-3.9 5.3-2.2 8.2 1.7 2.9 5.3 3.9 8.2 2.2 2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h66v6.8c-2.9 1.7-3.9 5.3-2.2 8.2s5.3 3.9 8.2 2.2c2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h24c3.3 0 6 2.7 6 6v18H6v-18z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="one form-control date-input" type="date" placeholder="Check In">
+                                    </div>
+                                    <div class="input-group">
+                                      <div class="two input-group-text" id="basic-addon1"> 
+                                        <svg class="sc-jBoNkH gTdONc sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                          <path d="M40.6 73.9c1.2 1 2.8.8 3.8-.3 1-1.2.8-2.8-.3-3.8l-.1-.1-7.7-6.1h35.6c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H36.1l7.8-6.3c1.2-1 1.4-2.6.4-3.8s-2.6-1.4-3.8-.4L26.8 58.8c-.6.5-1 1.3-1 2.2 0 .8.4 1.6 1 2.1l13.8 10.8z"></path>
+                                          <path d="M90.4 10.6H75V6.8c-.2-1.1-1.3-1.8-2.4-1.6-.8.2-1.4.8-1.6 1.6v3.8H28.8V6.8c-.2-1.1-1.3-1.8-2.4-1.6-.8.2-1.4.8-1.6 1.6v3.8H9.6C5.4 10.6 2 14 2 18.3v69.2c0 4.2 3.4 7.6 7.6 7.6h80.7c4.2 0 7.6-3.4 7.6-7.6V18.3c.1-4.3-3.3-7.7-7.5-7.7zm3.8 76.9c0 2.2-1.8 3.8-3.8 3.8H9.6c-2.2 0-3.8-1.8-3.8-3.8V33.6h88.4v53.9zm.1-57.7H5.8V18.3c0-2.2 1.8-3.8 3.8-3.8H25v4.4c-1.9 1.1-2.5 3.4-1.4 5.3s3.4 2.5 5.3 1.4 2.5-3.4 1.4-5.3c-.3-.6-.8-1.1-1.4-1.4v-4.4h42.3v4.4c-1.9 1.1-2.5 3.4-1.4 5.3s3.4 2.5 5.3 1.4 2.5-3.4 1.4-5.3c-.3-.6-.8-1.1-1.4-1.4v-4.4h15.4c2.2 0 3.8 1.8 3.8 3.8v11.5z"></path>
+                                        </svg>
+                                      </div>
+                                      <input class="form-control date-input" type="date" placeholder="Check Out" disabled>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="flight-kind-passengersCount">
+                                <div class="flight-kind">
+                                  <div class="header"> <span class="kind">Economy</span><i class="fas fa-chevron-down"></i></div>
+                                  <div class="toggle-menu"> 
+                                    <ul> 
+                                      <li>Economy</li>
+                                      <li>Premium Economy</li>
+                                      <li>Business</li>
+                                      <li>First </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="passenger-count">
+                                  <div class="header"><span class="passengers"><span class="count">1 </span>Passenger</span><i class="fas fa-chevron-down"></i></div>
+                                  <div class="toggle-menu"> 
+                                    <ul> 
+                                      <li>Adults(12+ years)
+                                        <div class="count">
+                                          <button class="increas">+</button>
+                                          <input type="text" value="1">
+                                          <button class="decreas disabled">-    </button>
+                                        </div>
+                                      </li>
+                                      <li>Children (2-11 years)
+                                        <div class="count">
+                                          <button class="increas">+</button>
+                                          <input type="text" value="0">
+                                          <button class="decreas disabled">-</button>
+                                        </div>
+                                      </li>
+                                      <li>infants(Under 2 yaers)
+                                        <div class="count">
+                                          <button class="increas">+</button>
+                                          <input type="text" value="0">
+                                          <button class="decreas disabled">-</button>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="search-flight">
+                                <button class="search-flight-btn"><i class="fas fa-search"></i>Search Flight</button>
+                              </div>
+                            </div>
+                            <div class="flights-menu">
+                              <div class="flights-meuns-container">
+                                <div class="flight">
+                                  <div class="header"> <span class="title"> <i class="fas fa-plane"></i>Flight</span><span class="flight-count">2</span><span class="line"></span></div>
+                                  <div class="body">
+                                    <div class="fly-to-from-section">
+                                      <div class="fly-to input-group">
+                                        <div class="input-group-text" id="basic-addon1">
+                                          <svg class="sc-gOhSNZ hJZzyW sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                            <path d="M50 1C22.9 1 1 22.9 1 50s21.9 49 49 49 49-21.9 49-49C99 23 77 1 50 1zm43.4 53.2C91.4 75 75 91.4 54.2 93.4l-1.5.2V73.3c0-1.5-1.2-2.7-2.7-2.7s-2.7 1.2-2.7 2.7v20.2l-1.5-.2C25 91.4 8.6 75 6.6 54.2l-.2-1.5h20.2c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H6.4l.2-1.5C8.6 25 25 8.6 45.8 6.6l1.5-.2v18.1c0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7V6.4l1.5.2C75 8.6 91.4 25 93.4 45.8l.2 1.5H75.5c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7h18.1l-.2 1.5z"></path>
+                                          </svg>
+                                        </div>
+                                        <input class="form-control input-text" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                        <div class="toggle-menu">
+                                          <ul> 
+                                            <li>Cairo</li>
+                                            <li>Cairo</li>
+                                            <li>Cairo</li>
+                                            <li>Cairo</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div class="fly-from input-group">
+                                        <div class="input-group-text" id="basic-addon1">
+                                          <svg class="sc-jRnjsG dkpoRr sc-hMqMXs llihTZ" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                            <path d="M68.8 5.5c-5-2.6-10.4-4.2-16-4.5H50C27.7 1 9.7 19.1 9.7 41.4c0 10.7 4.3 20.9 11.8 28.4l23.7 27c2.4 2.6 6.4 2.9 9.1.5l.5-.5 23.7-27c1.1-1.1 6.9-9.3 7.2-9.8 10.4-19.6 2.8-44.1-16.9-54.5zm15.1 38.1c-.5 6.6-2.9 13-6.9 18.2l-.1.2c-.9 1.2-1.9 2.3-2.9 3.3L50 92.6 26.1 65.4c-1-1-2-2.2-3-3.4-4.6-5.9-7-13.2-7-20.7 0-18.8 15.2-34 34-34 .8 0 1.6 0 2.4.1 18.7 1.3 32.7 17.5 31.4 36.2z"></path>
+                                            <path d="M50 22.9c-10.2 0-18.5 8.3-18.5 18.5S39.8 59.9 50 59.9s18.5-8.3 18.5-18.5c-.1-10.2-8.3-18.5-18.5-18.5zm0 30.5c-6.7 0-12.1-5.4-12.1-12.1S43.3 29.2 50 29.2s12.1 5.4 12.1 12.1c0 6.7-5.4 12.1-12.1 12.1z"></path>
+                                          </svg>
+                                        </div>
+                                        <input class="form-control input-text" placeholder="Cairo" type="text" aria-describedby="basic-addon1">
+                                        <div class="toggle-menu">
+                                          <ul> 
+                                            <li>Cairo</li>
+                                            <li>Cairo</li>
+                                            <li>Cairo</li>
+                                            <li>Cairo</li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="date-container">
+                                      <div class="input-group"> 
+                                        <div class="input-group-text" id="basic-addon1">
+                                          <svg class="sc-kJdAmE fTuJME sc-hMqMXs kDLzTc" focusable="false" color="gray850" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 150 150" preserveAspectRatio="xMidYMid meet" width="24px" height="24px">
+                                            <path d="M91.1 71.2l23.5 18.9c1.1.9 1.7 2.2 1.7 3.6s-.6 2.7-1.8 3.6L91 115.8c-2 1.6-4.9 1.2-6.4-.8-1.6-2-1.2-4.9.8-6.4l13.1-10.3H37.8c-2.5 0-4.6-2.1-4.6-4.6s2.1-4.6 4.6-4.6h60.9L85.4 78.4c-1.9-1.7-2.1-4.6-.4-6.5 1.5-1.8 4.2-2.1 6.1-.7zM0 25.5v108c0 6.6 5.4 12 12 12h126c6.6 0 12-5.4 12-12v-108c0-6.6-5.4-12-12-12h-24v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H42v-6c0-1.7-1.3-3-3-3s-3 1.3-3 3v6H12c-6.6 0-12 5.4-12 12zm6 24h138v84c0 3.3-2.7 6-6 6H12c-3.3 0-6-2.7-6-6v-84zm0-24c0-3.3 2.7-6 6-6h24v6.8c-2.9 1.7-3.9 5.3-2.2 8.2 1.7 2.9 5.3 3.9 8.2 2.2 2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h66v6.8c-2.9 1.7-3.9 5.3-2.2 8.2s5.3 3.9 8.2 2.2c2.9-1.7 3.9-5.3 2.2-8.2-.5-.9-1.3-1.7-2.2-2.2v-6.8h24c3.3 0 6 2.7 6 6v18H6v-18z"></path>
+                                          </svg>
+                                        </div>
+                                        <input class="form-control" type="date" placeholder="Check Out">
+                                      </div>
+                                    </div>
+                                    <div class="delete-flight" style="opacity:0;pointer-events:none"> 
+                                      <button> <i class="fas fa-times"></i></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="add-more-flight"> 
+                                <button>Add more flights(6 max)<i class="fas fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="footer"> 
+                              <div class="input-group">
+                                <input id="ShowPrice" type="checkbox">
+                                <label for="ShowPrice">Show prices for -/+ 2 days</label>
+                              </div>
+                              <div class="input-group">
+                                <input id="rememperFilter" type="checkbox">
+                                <label for="rememperFilter">Remember my filters</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12"> 
+                        <div class="calender-menu"> 
+                          <table>
+                            <tbody> 
+                              <tr> 
+                                <th> 
+                                  <div>Monday </div><br>12 jul
+                                </th>
+                                <th> 
+                                  <div>Monday </div><br>12 jul
+                                </th>
+                                <th> 
+                                  <div>Monday </div><br>12 jul
+                                </th>
+                                <th> 
+                                  <div>Monday </div><br>12 jul
+                                </th>
+                                <th> 
+                                  <div>Monday </div><br>12 jul
+                                </th>
+                              </tr>
+                              <td> 
+                                <div> <span class="price-kind">AED</span><span class="price">1,040</span></div>
+                              </td>
+                              <td> 
+                                <div> <span class="price-kind">AED</span><span class="price">1,040</span></div>
+                              </td>
+                              <td> 
+                                <div> <span class="price-kind">AED</span><span class="price">1,040</span></div>
+                              </td>
+                              <td> 
+                                <div> <span class="price-kind">AED</span><span class="price">1,040</span></div>
+                              </td>
+                              <td> 
+                                <div> <span class="price-kind">AED</span><span class="price">1,040</span></div>
+                              </td>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="col-md-12"> 
+                        <div class="suggestedfilter">
+                          <div class="box active"><i class="fas fa-star"></i><span>Recommended: AED</span><span class="price">1,700</span></div>
+                          <div class="box"><i class="fas fa-coins"></i><span>Cheapest: AED</span><span class="price">1,040</span></div>
+                          <div class="box"><i class="fas fa-stopwatch"></i><span>Shortest: AED</span><span class="price">1,700</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="trips-section" id="trips-section"> 
+                <div class="container-fluid"> 
+                  <div class="row">
+                    <div class="content">
+                      <div class="col-md-12">
+                        <div class="ticket stop">
+                          <div class="start-airport"> <img src="img/ksa.png" alt=""></div>
+                          <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                          <div class="flight-info">
+                            <div class="stop-count"><span class="count">1 stop </span><i class="fas fa-plane"></i></div>
+                            <div class="flight-moreinfo">
+                              <div class="flight-duration"><span class="time"> <i class="fas fa-clock"></i><span>10h 50m</span></span><span class="duration"> <i class="fas fa-suitcase-rolling"></i>Baggage included </span></div>
+                            </div>
+                          </div>
+                          <div class="flight-arrive date"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                          <div class="flight-details"> 
+                            <button>Flight details </button>
+                          </div>
+                          <div class="card-foot"> 
+                            <div class="flight-price"> <span class="price-kind">AED</span><span class="cost"> 950</span></div>
+                            <button class="select-flight">Select Flight <i class="fas fa-chevron-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="ticket direct">
+                          <div class="start-airport"> <img src="img/ksa.png" alt=""></div>
+                          <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                          <div class="flight-info">
+                            <div class="stop-count direct"><span class="count">Direct </span><i class="fas fa-plane"></i></div>
+                            <div class="flight-moreinfo">
+                              <div class="flight-duration"><span class="time"> <i class="fas fa-clock"></i><span>10h 50m</span></span><span class="duration"> <i class="fas fa-suitcase-rolling"></i>Baggage included </span></div>
+                            </div>
+                          </div>
+                          <div class="flight-arrive date"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                          <div class="flight-details"> 
+                            <button>Flight details </button>
+                          </div>
+                          <div class="card-foot"> 
+                            <div class="flight-price"> <span class="price-kind">AED</span><span class="cost"> 950</span></div>
+                            <button class="select-flight">Select Flight <i class="fas fa-chevron-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="ticket two-stops">
+                          <div class="start-airport"> <img src="img/ksa.png" alt=""></div>
+                          <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                          <div class="flight-info">
+                            <div class="stop-count"><span class="count">2 stops </span><i class="fas fa-plane"></i></div>
+                            <div class="flight-moreinfo">
+                              <div class="flight-duration"><span class="time"> <i class="fas fa-clock"></i><span>10h 50m</span></span><span class="duration"> <i class="fas fa-suitcase-rolling"></i>Baggage included </span></div>
+                            </div>
+                          </div>
+                          <div class="flight-arrive date"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                          <div class="flight-details"> 
+                            <button>Flight details </button>
+                          </div>
+                          <div class="card-foot"> 
+                            <div class="flight-price"> <span class="price-kind">AED</span><span class="cost"> 950</span></div>
+                            <button class="select-flight">Select Flight <i class="fas fa-chevron-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="FD-menus">
+      <div class="flightDetail-menu">
+        <div class="menu stop">
+          <div class="con-btn"> 
+            <button class="close-btn"> <i class="fas fa-times"></i>Close </button>
+            <div class="content"> 
+              <div class="ticket">
+                <div class="start-airport"> <img src="img/ksa.png" alt=""></div>
+                <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                <div class="flight-info">
+                  <div class="stop-count"><span class="count">1 stop </span><i class="fas fa-plane"></i></div>
+                  <div class="flight-moreinfo">
+                    <div class="flight-duration"><span class="time"> <i class="fas fa-clock"></i><span>10h 50m</span></span><span class="duration"> <i class="fas fa-suitcase-rolling"></i>Baggage included </span></div>
+                  </div>
+                </div>
+                <div class="flight-arrive date"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                <div class="card-foot"> 
+                  <div class="flight-price"> <span class="price-kind">AED</span><span class="cost"> 950</span></div>
+                  <button class="select-flight">Select Flight <i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="menu-nav"> 
+                <ul class="nav-list">
+                  <li class="nav-item active">
+                    <button>Flight itinerary</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button>Baggage info</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button>Cancel & change</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button> Fare details</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="warpper"> 
+                <div class="supmenu Flightitinerary-section active">
+                  <div class="menu-duration"> 
+                    <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span>
+                      <div class="total-duration">Total duration: <span>07h 10m</span></div>
+                    </div>
+                    <div class="submenu">
+                      <div class="ticket">
+                        <div class="start-airport"> <img src="img/ksa.png" alt="">
+                          <ul> 
+                            <li>Saudia</li>
+                            <li>SV-1429</li>
+                            <li>AIRBUS</li>
+                            <li>Economy class</li>
+                          </ul>
+                        </div>
+                        <div class="flight-deprature">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                          </ul>
+                        </div>
+                        <div class="flight-arrivall">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                            <li>jedahh ,Sauidia Arabia </li>
+                            <li class="terminal">Terminal 1 (new airport)</li>
+                          </ul>
+                        </div>
+                        <div class="card-foot"> 
+                          <div class="flight-time"><span>01h 00m</span></div>
+                        </div>
+                      </div>
+                      <div class="waiting-time">
+                        <p> <i class="far fa-clock"></i>Waiting Time in JED, Jeddah</p><span class="time">03h 50m</span>
+                      </div>
+                      <div class="ticket">
+                        <div class="start-airport"> <img src="img/ksa.png" alt="">
+                          <ul> 
+                            <li>Saudia</li>
+                            <li>SV-1429</li>
+                            <li>AIRBUS</li>
+                            <li>Economy class</li>
+                          </ul>
+                        </div>
+                        <div class="flight-deprature">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                          </ul>
+                        </div>
+                        <div class="flight-arrivall">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                            <li>jedahh ,Sauidia Arabia </li>
+                            <li class="terminal">Terminal 1 (new airport)</li>
+                          </ul>
+                        </div>
+                        <div class="card-foot"> 
+                          <div class="flight-time"><span>01h 00m</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu baggage-info-section">
+                  <div class="container-fluid"> 
+                    <div class="row"> 
+                      <div class="col-md-6" style="border-right: 2px solid #eee;"> 
+                        <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span></div>
+                        <div class="capinBaggage">
+                          <ul> 
+                            <li>
+                              <div class="desc"><i class="fas fa-suitcase-rolling"> </i>Capin baggage </div>
+                              <div class="info">
+                                 7 KG (max 1 Bag)    </div>
+                            </li>
+                            <li>
+                              <div class="desc"><i class="fas fa-suitcase-rolling"> </i>Capin baggage </div>
+                              <div class="info">
+                                 2 Bags <i class="fas fa-info">  </i></div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="aireline-baggage-info-section"> 
+                          <h3 class="header">Airline baggage Information</h3>
+                        </div>
+                        <div class="baggage-dimensions-section">
+                          <h4 class="header"> Baggage dimension </h4>
+                          <div class="capin-baggage"> 
+                            <figure class="figure-one"> 
+                              <svg class="sc-hMqMXs irGMpL" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 91 102" preserveAspectRatio="xMidYMid meet" size="120" width="100" height="100">
+                                <defs>
+                                  <rect id="path-1" x="17.0454545" y="62.5690178" width="21.5909091" height="1"></rect>
+                                  <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21.5909091" height="0.909090909" fill="white"></mask>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="icon_cabin_tjw" transform="translate(-0.166085, 0.000000)">
+                                    <g id="Alm" transform="translate(25.166085, 0.000000)">
+                                      <rect id="Rectangle" stroke="#3665AC" stroke-width="0.909090909" fill="#FFFFFF" x="0.454545455" y="19.4602988" width="55.1307597" height="66.1363636" rx="4.3357718"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="6.47807338" y="33.3063856" width="1.704545" height="36.5" rx="0.8522725"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="5.68708249" y="32.7751984" width="1.704545" height="37.5" rx="0.8522725"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="16.8429201" y="33.3704044" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="16.0519292" y="32.8392172" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="27.4780734" y="33.3063856" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="26.6870825" y="32.7751984" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="38.4651532" y="33.661352" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="37.6741623" y="33.1301648" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="48.4780734" y="33.3063856" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="47.6870825" y="32.7751984" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-16" stroke="#5992E8" stroke-width="2.27272727" x="18.1818182" y="2.13636364" width="20.4545455" height="17.7272727" rx="4.3357718"></rect>
+                                      <path id="Combined-Shape" d="M38.8460464,54.5454545 C39.9178174,54.5454545 40.888124,54.9798756 41.5904878,55.6822394 C42.2928517,56.3846032 42.7272727,57.3549098 42.7272727,58.4266809 L42.7272727,58.4266809 L42.7272727,75.2272727 L14.0909091,75.2272727 L14.0909091,58.4266809 C14.0909091,57.3549098 14.5253301,56.3846032 15.227694,55.6822394 C15.9300578,54.9798756 16.9003644,54.5454545 17.9721354,54.5454545 L17.9721354,54.5454545 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#FFFFFF"></path>
+                                      <path id="Rectangle-Copy-14" d="M55.5853051,73.4984379 L55.5853051,81.7154361 C55.5853051,82.7872071 55.150884,83.7575137 54.4485202,84.4598775 C53.7461564,85.1622414 52.7758498,85.5966624 51.7040788,85.5966624 L51.7040788,85.5966624 L4.3357718,85.5966624 C3.26400074,85.5966624 2.29369415,85.1622414 1.59133033,84.4598775 C0.888966511,83.7575137 0.454545455,82.7872071 0.454545455,81.7154361 L0.454545455,81.7154361 L0.454545455,73.4984379 L55.5853051,73.4984379 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#EAEFF6"></path>
+                                      <path id="Rectangle-Copy-15" d="M55.5853051,19.3181818 L55.5853051,24.7551373 C55.5853051,25.8269083 55.150884,26.7972149 54.4485202,27.4995788 C53.7461564,28.2019426 52.7758498,28.6363636 51.7040788,28.6363636 L51.7040788,28.6363636 L4.3357718,28.6363636 C3.26400074,28.6363636 2.29369415,28.2019426 1.59133033,27.4995788 C0.888966511,26.7972149 0.454545455,25.8269083 0.454545455,24.7551373 L0.454545455,24.7551373 L0.454545455,19.3181818 L55.5853051,19.3181818 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#EAEFF6" transform="translate(28.019925, 23.977273) rotate(-180.000000) translate(-28.019925, -23.977273) "></path>
+                                      <ellipse id="shadow" fill="#EAEFF6" transform="translate(27.600000, 94.000000) scale(1, -1) translate(-27.600000, -94.000000) " cx="27.6" cy="94" rx="24.6" ry="2"></ellipse>
+                                      <ellipse id="Oval" fill="#3665AC" cx="16.1918079" cy="89.8470209" rx="4.54545455" ry="4.57183049"></ellipse>
+                                      <ellipse id="Oval-Copy" fill="#3665AC" cx="40.6050659" cy="89.8470209" rx="4.54545455" ry="4.57183049"></ellipse>
+                                      <circle id="Oval" fill="#FFFFFF" cx="16.1272511" cy="89.8329994" r="2.27272727"></circle>
+                                      <circle id="Oval-Copy-2" fill="#FFFFFF" cx="40.5965113" cy="89.9304281" r="2.27272727"></circle>
+                                      <path id="Path-Copy" d="M41.5584416,4.54545455 L15.2597403,4.54545455 C13.1071808,4.54545455 11.3636364,3.52783196 11.3636364,2.27272727 C11.3636364,1.01762244 13.1071808,2.27373675e-13 15.2597403,2.27373675e-13 L41.5584416,2.27373675e-13 C43.7100496,2.27373675e-13 45.4545455,1.01762244 45.4545455,2.27272727 C45.4545455,3.52783196 43.7100496,4.54545455 41.5584416,4.54545455 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <path id="Path-Copy-2" d="M22.2313042,18.8643793 L14.2313042,18.8643793 L14.2313042,15.8749886 C14.2313042,15.3173771 14.6628708,14.8643793 15.196204,14.8643793 L21.2664043,14.8643793 C21.7997375,14.8643793 22.2313042,15.3173771 22.2313042,15.8749886 L22.2313042,18.8643793 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <path id="Path-Copy-3" d="M42.7694142,18.9135933 L34.7694142,18.9135933 L34.7694142,15.9242026 C34.7694142,15.3665911 35.2009809,14.9135933 35.7343141,14.9135933 L41.8045143,14.9135933 C42.3378475,14.9135933 42.7694142,15.3665911 42.7694142,15.9242026 L42.7694142,18.9135933 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <use id="Rectangle" stroke="#3665AC" mask="url(#mask-2)" stroke-width="2.27272727" stroke-dasharray="1.136363636363636"></use>
+                                      <path id="Path-4-Copy" d="M37.511102,62.9520607 L36.8307967,64.9364438 C36.6272666,65.530121 36.9435433,66.1763852 37.5372205,66.3799153 C37.6558321,66.4205789 37.780356,66.4413313 37.9057443,66.4413313 L39.8901275,66.4413313 C40.5177238,66.4413313 41.0264911,65.932564 41.0264911,65.3049677 C41.0264911,65.0831765 40.9615871,64.8662334 40.8397808,64.6808836 L39.5357029,62.6965005 C39.1910308,62.1720215 38.4864446,62.0262591 37.9619656,62.3709312 C37.7514099,62.5093022 37.5928105,62.7137249 37.511102,62.9520607 Z" fill="#E0E8F6" transform="translate(39.155786, 63.600422) rotate(-21.000000) translate(-39.155786, -63.600422) "></path>
+                                      <path id="Path-4-Copy" d="M36.8732478,62.8152646 L36.1929425,64.7996477 C35.9894124,65.3933249 36.3056891,66.0395892 36.8993663,66.2431193 C37.0179779,66.2837829 37.1425018,66.3045353 37.2678902,66.3045353 L39.2522733,66.3045353 C39.8798696,66.3045353 40.3886369,65.7957679 40.3886369,65.1681716 C40.3886369,64.9463805 40.323733,64.7294373 40.2019266,64.5440876 L38.8978488,62.5597045 C38.5531767,62.0352254 37.8485904,61.8894631 37.3241114,62.2341352 C37.1135557,62.3725061 36.9549563,62.5769289 36.8732478,62.8152646 Z" fill="#E64129" transform="translate(38.517932, 63.463626) rotate(-21.000000) translate(-38.517932, -63.463626) "></path>
+                                    </g>
+                                    <g id="Group-3" transform="translate(86.166085, 15.000000)">
+                                      <polygon id="Triangle" fill="#C6CCCE" points="2 0 4 4 0 4"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(2.000000, 77.000000) scale(1, -1) translate(-2.000000, -77.000000) " points="2 75 4 79 0 79"></polygon>
+                                      <line id="Line-3" x1="2.17102733" y1="6" x2="2.17102733" y2="73" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                    <g id="Group-11" transform="translate(25.166085, 98.000000)">
+                                      <polygon id="Triangle" fill="#C6CCCE" transform="translate(2.000000, 2.000000) rotate(270.000000) translate(-2.000000, -2.000000) " points="2 0 4 4 0 4"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(54.000000, 2.000000) scale(1, -1) rotate(-270.000000) translate(-54.000000, -2.000000) " points="54 0 56 4 52 4"></polygon>
+                                      <line id="Line" x1="6.54145709" y1="2.384113" x2="50.5414571" y2="2.384113" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                    <g id="Group-12" transform="translate(14.000000, 90.469849) rotate(8.000000) translate(-14.000000, -90.469849) translate(3.000000, 81.469849)">
+                                      <polygon id="Triangle" fill="#C6CCCE" transform="translate(3.000000, 3.000000) rotate(304.000000) translate(-3.000000, -3.000000) " points="3 1 5 5 1 5"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(19.000000, 15.000000) scale(1, -1) rotate(-303.000000) translate(-19.000000, -15.000000) " points="19 13 21 17 17 17"></polygon>
+                                      <line id="Line-2" x1="5.88043477" y1="5.06959374" x2="16.1258309" y2="13.0715846" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="details"> <span>Cabin baggage</span><span>1 fully-collapsible baby stroller that can be stowed is allowed.</span></div>
+                            </figure>
+                            <figure class="figure-two"> 
+                              <svg class="sc-hMqMXs irGMpL" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 61 52" preserveAspectRatio="xMidYMid meet" size="120" width="120" height="65">
+                                <g fill="none" fill-rule="evenodd">
+                                  <g>
+                                    <g transform="translate(-571 -248) translate(571 248)">
+                                      <rect width="59.473" height="40.888" x=".595" y="6.071" fill="#EAEFF6" rx="6.899"></rect>
+                                      <path fill="#3665AC" d="M20.807 6.071c.923-3.72 2.9-5.58 5.935-5.58h7.229c3.041.139 4.991 2 5.85 5.587 0-.005-1.013-.007-3.04-.007-.628-1.738-1.565-2.608-2.81-2.608h-6.635c-1.749.018-2.904.89-3.467 2.615-.025.015-1.046.012-3.062-.007z"></path>
+                                      <path fill="#FFF" d="M14.273 6.666H45.794V46.513000000000005H14.273z"></path>
+                                      <path fill="#E0E8F6" d="M35.389 23.047V15.77c.24-2.53 1.392-3.796 3.456-3.796s3.24 1.265 3.529 3.796v7.278c0 .215-.174.388-.388.388h-6.209c-.214 0-.388-.173-.388-.388z"></path>
+                                      <path fill="#E64129" d="M35.203 22.093v-7.148c.212-2.36 1.227-3.539 3.045-3.539 1.818 0 2.854 1.18 3.109 3.54v7.147h-6.154z"></path>
+                                      <circle cx="38.063" cy="13.803" r="1" fill="#EAEFF6"></circle>
+                                      <path fill="#FFF" d="M.953 39.17V14.278c4.776-1.014 7.305-3.506 7.589-7.475h3.17v39.925h-3.17c-.078-.965-.182-1.653-.312-2.063-.49-1.553-1.284-2.64-1.898-3.25-.585-.583-1.612-1.365-3.071-1.85-.451-.15-1.22-.281-2.308-.395z"></path>
+                                      <path fill="#FFF" d="M49.362 39.033V14.14c4.776-1.013 7.305-3.505 7.589-7.474h3.17V46.59h-3.17c-.078-.966-.182-1.653-.311-2.063-.49-1.553-1.285-2.64-1.898-3.25-.585-.583-1.613-1.365-3.072-1.85-.451-.15-1.22-.281-2.308-.395z" transform="matrix(-1 0 0 1 109.483 0)"></path>
+                                      <path fill="#3665AC" d="M55.019 46.443h-2.587c.185-3.713 3.18-6.694 6.91-6.878v2.555c0 2.384-1.94 4.323-4.323 4.323zm-8.76 0h2.366V6.803H46.26v39.64zm-34.222 0h2.366V6.803h-2.366v39.64zM1.32 42.12v-2.555c3.73.184 6.726 3.165 6.91 6.878H5.643c-2.384 0-4.323-1.94-4.323-4.323zM5.643 6.803H8.23c-.184 3.713-3.18 6.694-6.91 6.878v-2.555c0-2.384 1.94-4.323 4.323-4.323zm5.67 0v39.64H8.955C8.769 42.33 5.45 39.026 1.32 38.84V14.406c4.13-.186 7.449-3.49 7.636-7.603h2.356zm13.019 0h13.553v4.32c-1.732.184-3.09 1.636-3.09 3.416v7.916c0 .201.163.363.363.363h6.18c.2 0 .363-.162.363-.363V14.54c0-1.78-1.359-3.232-3.09-3.416v-4.32h6.923v39.64H15.128V6.803h9.204zm11.963-.725H24.368c.177-1.206 1.209-2.138 2.464-2.138h6.998c1.256 0 2.288.932 2.465 2.138zm1.15 6.944c-.443.442-.443 1.162 0 1.605.214.214.5.332.803.332.303 0 .588-.118.802-.332.444-.443.444-1.163 0-1.605-.127-.128-.279-.215-.44-.269v-.905c1.331.18 2.365 1.311 2.365 2.69v7.555H35.52v-7.554c0-1.38 1.034-2.512 2.365-2.69v.904c-.161.055-.313.14-.44.269zm.472.574c.056.127.183.216.33.216.148 0 .275-.09.331-.216.11.159.102.376-.04.518-.16.16-.42.16-.58 0-.077-.078-.12-.18-.12-.29 0-.084.032-.16.079-.228zM26.832.849h6.998c2.961 0 5.393 2.314 5.58 5.229h-2.374c-.18-1.609-1.55-2.864-3.206-2.864h-6.998c-1.656 0-3.025 1.255-3.205 2.864h-2.375c.188-2.915 2.62-5.229 5.58-5.229zm32.51 13.557V38.84c-4.13.186-7.45 3.49-7.636 7.603H49.35V6.803h2.356c.187 4.113 3.506 7.417 7.636 7.603zm0-3.28v2.555c-3.73-.184-6.725-3.165-6.91-6.878h2.588c2.383 0 4.322 1.94 4.322 4.323zM40.13 6.078c-.19-3.314-2.938-5.954-6.3-5.954h-6.997c-3.36 0-6.108 2.64-6.298 5.954H5.644c-2.784 0-5.05 2.264-5.05 5.048V42.12c0 2.783 2.266 5.048 5.05 5.048h49.375c2.783 0 5.048-2.265 5.048-5.048V11.126c0-2.784-2.264-5.048-5.047-5.048H40.129z"></path>
+                                      <rect width="60.662" height="42.226" y="5.476" rx="6.899"></rect>
+                                      <rect width="7.761" height="4.657" x="9.318" y="33.497" fill="#5992E8" rx=".776"></rect>
+                                      <rect width="7.761" height="4.657" x="43.467" y="33.497" fill="#5992E8" rx=".776"></rect>
+                                      <ellipse cx="29.963" cy="50.448" fill="#EAEFF6" rx="19.093" ry="1.552" transform="matrix(1 0 0 -1 0 100.896)"></ellipse>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="details"> <span>Cabin baggage</span><span>1 fully-collapsible baby</span></div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu cancel-change-section"> 
+                  <table class="text-center"> 
+                    <tr> 
+                      <th class="border-none"> </th>
+                      <th class="color-grey">Per adult</th>
+                    </tr>
+                    <tr> 
+                      <th class="border-l-none">Cancellation Fees</th>
+                      <th> <i class="far fa-times-circle"></i><span>Not primmited</span></th>
+                    </tr>
+                    <tr> 
+                      <th class="border-l-none">Date Change Fees</th>
+                      <th> <i class="far fa-check-circle true"></i><span class="true">AED 270</span></th>
+                    </tr>
+                  </table>
+                  <div class="note"> 
+                    <p>All fees are applicable up to 28 hours before departure time. Additional fees may apply after that.</p>
+                  </div>
+                  <div class="FAQ-cancelation">
+                    <div class="header"> 
+                      <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <g transform="translate(-305 -530) translate(295 510) translate(10 20)">
+                                <circle cx="15" cy="15" r="15" fill="#E9F4F5"></circle>
+                                <g fill="#231F20" fill-rule="nonzero" stroke="#E9F4F5" stroke-width=".1">
+                                  <path d="M.005.44v20.769c0 .22.178.4.4.4H15.58c.22 0 .4-.18.4-.4V4.434c0-.009-.005-.016-.005-.025-.002-.035-.01-.07-.02-.103-.005-.013-.008-.025-.014-.037-.02-.044-.046-.083-.08-.117L11.868.158c-.034-.034-.074-.061-.117-.08-.012-.005-.025-.01-.037-.013-.033-.012-.068-.019-.104-.021-.006.001-.014-.003-.023-.003H.404c-.22 0-.4.178-.4.399zm14.612 3.595h-2.63v-2.63l2.63 2.63zM.803.839h10.385v3.595c0 .22.179.4.4.4h3.594V20.81H.803V.84z" transform="translate(6.658 4.11)"></path>
+                                </g>
+                                <path fill="#AFC1DE" d="M11.451 4.93l10.385-.06.019 20.05-14.398.077V8.924h3.494c.277 0 .5-.224.5-.5V4.93z" transform="matrix(-1 0 0 1 29.312 0)"></path>
+                                <rect width="11" height="1" x="9" y="11" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="14" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="17" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="20" fill="#FFF" rx=".5"></rect>
+                                <circle cx="7.457" cy="4.562" r="4.15" fill="#3665AC" stroke="#231F20" stroke-width=".7"></circle>
+                                <g fill="#FFF" fill-rule="nonzero">
+                                  <path d="M.433 3.467c.24 0 .434-.194.434-.434v-2.6C.867.194.673 0 .433 0 .194 0 0 .194 0 .433v2.6c0 .24.194.434.433.434zM.433 5.2c.24 0 .434-.194.434-.433v-.434c0-.239-.194-.433-.434-.433-.239 0-.433.194-.433.433v.434c0 .239.194.433.433.433z" transform="translate(6.895 2)"></path>
+                                </g>
+                                <path fill="#FFF" d="M18.645 5.467L21.405 8.258 18.645 8.145z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>
+                         Cancellation & change details<br>Learn more about the rules and fees</p>
+                      <div class="text-right"><i class="fas fa-chevron-up"></i></div>
+                    </div>
+                    <div class="toggle-menu"> 
+                      <ul> 
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="FAQ"> 
+                    <div class="header"> 
+                      <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <g>
+                                <g transform="translate(-60 -709) translate(50 534) translate(0 155) translate(10 20)">
+                                  <circle cx="17" cy="15" r="15" fill="#EAEFF6"></circle>
+                                  <path fill="#AFC1DE" stroke="#231F20" stroke-width=".812" d="M20.737 11.976c2.02 0 3.847.818 5.17 2.141s2.142 3.151 2.142 5.17c0 1.39-.388 2.689-1.061 3.795h0l1.324 3.712-4.196-1.021c-1.01.527-2.16.825-3.379.825-2.018 0-3.846-.818-5.17-2.141-1.322-1.323-2.14-3.151-2.14-5.17s.818-3.847 2.14-5.17c1.324-1.323 3.152-2.141 5.17-2.141z"></path>
+                                  <g fill="#FFF" fill-rule="nonzero">
+                                    <path d="M.544 0C.26 0-.013.25 0 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C1.074.25.85 0 .544 0zM2.544 0C2.26 0 1.987.25 2 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C3.074.25 2.85 0 2.544 0zM4.544 0C4.26 0 3.987.25 4 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C5.074.25 4.85 0 4.544 0z" transform="rotate(-1 1084.062 -1037.109)"></path>
+                                  </g>
+                                  <path fill="#AFC1DE" stroke="#231F20" stroke-width=".8" d="M10.196 1.4c-2.513 0-4.788 1.019-6.435 2.665C2.114 5.712 1.096 7.987 1.096 10.5c0 1.713.473 3.316 1.297 4.684h0L.734 19.83l5.288-1.24c1.25.646 2.67 1.011 4.174 1.011 2.513 0 4.788-1.019 6.435-2.665 1.646-1.647 2.665-3.922 2.665-6.435 0-2.513-1.019-4.788-2.665-6.435C14.984 2.42 12.709 1.4 10.196 1.4z"></path>
+                                  <g transform="matrix(-1 0 0 1 19.082 1.954)">
+                                    <mask id="2n91xy0d5b" fill="#fff">
+                                      <ellipse cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                    </mask>
+                                    <ellipse fill="#3665AC" cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                    <ellipse cx="9.783" cy="8.751" fill="#AFC1DE" mask="url(#2n91xy0d5b)" rx="8" ry="9.5"></ellipse>
+                                  </g>
+                                  <g fill="#FFF" fill-rule="nonzero">
+                                    <path d="M2.704 8.417c-.284 0-.557.25-.543.544.013.294.238.543.543.543.284 0 .557-.25.543-.543-.013-.295-.238-.544-.543-.544zM2.704 0C1.213 0 0 1.213 0 2.704c0 .3.243.543.543.543.3 0 .544-.243.544-.543 0-.892.725-1.617 1.617-1.617s1.617.725 1.617 1.617-.725 1.617-1.617 1.617c-.3 0-.543.243-.543.543v2.217c0 .3.243.544.543.544.3 0 .543-.244.543-.544V5.353C4.48 5.101 5.408 4.01 5.408 2.704 5.408 1.213 4.195 0 2.704 0z" transform="translate(7.106 5.529)"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>
+                         Frequently asked questions <br>Find useful answers to common questions here</p>
+                      <div class="text-right"><i class="fas fa-chevron-up"></i></div>
+                    </div>
+                    <div class="toggle-menu"> 
+                      <ul> 
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu fare-detail-section">
+                  <div class="header"> 
+                    <h2>Fare Details </h2>
+                    <ul> 
+                      <li> <span class="desc">Fare </span><span class="info">AED 1,030</span></li>
+                      <li> <span class="desc">Taxes & fees </span><span class="info">AED 1,030</span></li>
+                      <li> <span class="desc">VAT </span><span class="info">AED 1,030</span></li>
+                    </ul>
+                  </div>
+                  <div class="footer"> <span class="total">Total (incl.VAT)</span><span class="price">AED 1,310</span></div>
+                </div>
+              </div>
+              <div class="menu-footer"> 
+                <button class="hide-details">Hide Details</button>
+                <button class="select-flight">Select flight AED 1,040   <i class="fas fa-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu direct">
+          <div class="con-btn"> 
+            <button class="close-btn"> <i class="fas fa-times"></i>Close </button>
+            <div class="content"> 
+              <div class="ticket">
+                <div class="start-airport"> <img src="img/ksa.png" alt=""></div>
+                <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                <div class="flight-info">
+                  <div class="stop-count direct-color"><span class="count">Direct </span><i class="fas fa-plane"></i></div>
+                  <div class="flight-moreinfo">
+                    <div class="flight-duration"><span class="time"> <i class="fas fa-clock"></i><span>10h 50m</span></span><span class="duration"> <i class="fas fa-suitcase-rolling"></i>Baggage included </span></div>
+                  </div>
+                </div>
+                <div class="flight-arrive date"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                <div class="card-foot"> 
+                  <div class="flight-price"> <span class="price-kind">AED</span><span class="cost"> 950</span></div>
+                  <button class="select-flight">Select Flight <i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="menu-nav"> 
+                <ul class="nav-list">
+                  <li class="nav-item active">
+                    <button>Flight itinerary</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button>Baggage info</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button>Cancel & change</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button> Fare details</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="warpper"> 
+                <div class="supmenu Flightitinerary-section active">
+                  <div class="menu-duration"> 
+                    <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span>
+                      <div class="total-duration">Total duration: <span>07h 10m</span></div>
+                    </div>
+                    <div class="submenu">
+                      <div class="ticket">
+                        <div class="start-airport"> <img src="img/ksa.png" alt="">
+                          <ul> 
+                            <li>Saudia</li>
+                            <li>SV-1429</li>
+                            <li>AIRBUS</li>
+                            <li>Economy class</li>
+                          </ul>
+                        </div>
+                        <div class="flight-deprature">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                          </ul>
+                        </div>
+                        <div class="flight-arrivall">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                            <li>jedahh ,Sauidia Arabia </li>
+                            <li class="terminal">Terminal 1 (new airport)</li>
+                          </ul>
+                        </div>
+                        <div class="card-foot"> 
+                          <div class="flight-time"><span>01h 00m</span></div>
+                        </div>
+                      </div>
+                      <div class="waiting-time">
+                        <p> <i class="far fa-clock"></i>Waiting Time in JED, Jeddah</p><span class="time">03h 50m</span>
+                      </div>
+                      <div class="ticket">
+                        <div class="start-airport"> <img src="img/ksa.png" alt="">
+                          <ul> 
+                            <li>Saudia</li>
+                            <li>SV-1429</li>
+                            <li>AIRBUS</li>
+                            <li>Economy class</li>
+                          </ul>
+                        </div>
+                        <div class="flight-deprature">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                          </ul>
+                        </div>
+                        <div class="flight-arrivall">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                            <li>jedahh ,Sauidia Arabia </li>
+                            <li class="terminal">Terminal 1 (new airport)</li>
+                          </ul>
+                        </div>
+                        <div class="card-foot"> 
+                          <div class="flight-time"><span>01h 00m</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu baggage-info-section">
+                  <div class="container-fluid"> 
+                    <div class="row"> 
+                      <div class="col-md-6" style="border-right: 2px solid #eee;"> 
+                        <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span></div>
+                        <div class="capinBaggage">
+                          <ul> 
+                            <li>
+                              <div class="desc"><i class="fas fa-suitcase-rolling"> </i>Capin baggage </div>
+                              <div class="info">
+                                 7 KG (max 1 Bag)    </div>
+                            </li>
+                            <li>
+                              <div class="desc"><i class="fas fa-suitcase-rolling"> </i>Capin baggage </div>
+                              <div class="info">
+                                 2 Bags <i class="fas fa-info">  </i></div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="aireline-baggage-info-section"> 
+                          <h3 class="header">Airline baggage Information</h3>
+                        </div>
+                        <div class="baggage-dimensions-section">
+                          <h4 class="header"> Baggage dimension </h4>
+                          <div class="capin-baggage"> 
+                            <figure class="figure-one"> 
+                              <svg class="sc-hMqMXs irGMpL" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 91 102" preserveAspectRatio="xMidYMid meet" size="120" width="100" height="100">
+                                <defs>
+                                  <rect id="path-1" x="17.0454545" y="62.5690178" width="21.5909091" height="1"></rect>
+                                  <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21.5909091" height="0.909090909" fill="white"></mask>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="icon_cabin_tjw" transform="translate(-0.166085, 0.000000)">
+                                    <g id="Alm" transform="translate(25.166085, 0.000000)">
+                                      <rect id="Rectangle" stroke="#3665AC" stroke-width="0.909090909" fill="#FFFFFF" x="0.454545455" y="19.4602988" width="55.1307597" height="66.1363636" rx="4.3357718"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="6.47807338" y="33.3063856" width="1.704545" height="36.5" rx="0.8522725"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="5.68708249" y="32.7751984" width="1.704545" height="37.5" rx="0.8522725"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="16.8429201" y="33.3704044" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="16.0519292" y="32.8392172" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="27.4780734" y="33.3063856" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="26.6870825" y="32.7751984" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="38.4651532" y="33.661352" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="37.6741623" y="33.1301648" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="48.4780734" y="33.3063856" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="47.6870825" y="32.7751984" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-16" stroke="#5992E8" stroke-width="2.27272727" x="18.1818182" y="2.13636364" width="20.4545455" height="17.7272727" rx="4.3357718"></rect>
+                                      <path id="Combined-Shape" d="M38.8460464,54.5454545 C39.9178174,54.5454545 40.888124,54.9798756 41.5904878,55.6822394 C42.2928517,56.3846032 42.7272727,57.3549098 42.7272727,58.4266809 L42.7272727,58.4266809 L42.7272727,75.2272727 L14.0909091,75.2272727 L14.0909091,58.4266809 C14.0909091,57.3549098 14.5253301,56.3846032 15.227694,55.6822394 C15.9300578,54.9798756 16.9003644,54.5454545 17.9721354,54.5454545 L17.9721354,54.5454545 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#FFFFFF"></path>
+                                      <path id="Rectangle-Copy-14" d="M55.5853051,73.4984379 L55.5853051,81.7154361 C55.5853051,82.7872071 55.150884,83.7575137 54.4485202,84.4598775 C53.7461564,85.1622414 52.7758498,85.5966624 51.7040788,85.5966624 L51.7040788,85.5966624 L4.3357718,85.5966624 C3.26400074,85.5966624 2.29369415,85.1622414 1.59133033,84.4598775 C0.888966511,83.7575137 0.454545455,82.7872071 0.454545455,81.7154361 L0.454545455,81.7154361 L0.454545455,73.4984379 L55.5853051,73.4984379 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#EAEFF6"></path>
+                                      <path id="Rectangle-Copy-15" d="M55.5853051,19.3181818 L55.5853051,24.7551373 C55.5853051,25.8269083 55.150884,26.7972149 54.4485202,27.4995788 C53.7461564,28.2019426 52.7758498,28.6363636 51.7040788,28.6363636 L51.7040788,28.6363636 L4.3357718,28.6363636 C3.26400074,28.6363636 2.29369415,28.2019426 1.59133033,27.4995788 C0.888966511,26.7972149 0.454545455,25.8269083 0.454545455,24.7551373 L0.454545455,24.7551373 L0.454545455,19.3181818 L55.5853051,19.3181818 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#EAEFF6" transform="translate(28.019925, 23.977273) rotate(-180.000000) translate(-28.019925, -23.977273) "></path>
+                                      <ellipse id="shadow" fill="#EAEFF6" transform="translate(27.600000, 94.000000) scale(1, -1) translate(-27.600000, -94.000000) " cx="27.6" cy="94" rx="24.6" ry="2"></ellipse>
+                                      <ellipse id="Oval" fill="#3665AC" cx="16.1918079" cy="89.8470209" rx="4.54545455" ry="4.57183049"></ellipse>
+                                      <ellipse id="Oval-Copy" fill="#3665AC" cx="40.6050659" cy="89.8470209" rx="4.54545455" ry="4.57183049"></ellipse>
+                                      <circle id="Oval" fill="#FFFFFF" cx="16.1272511" cy="89.8329994" r="2.27272727"></circle>
+                                      <circle id="Oval-Copy-2" fill="#FFFFFF" cx="40.5965113" cy="89.9304281" r="2.27272727"></circle>
+                                      <path id="Path-Copy" d="M41.5584416,4.54545455 L15.2597403,4.54545455 C13.1071808,4.54545455 11.3636364,3.52783196 11.3636364,2.27272727 C11.3636364,1.01762244 13.1071808,2.27373675e-13 15.2597403,2.27373675e-13 L41.5584416,2.27373675e-13 C43.7100496,2.27373675e-13 45.4545455,1.01762244 45.4545455,2.27272727 C45.4545455,3.52783196 43.7100496,4.54545455 41.5584416,4.54545455 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <path id="Path-Copy-2" d="M22.2313042,18.8643793 L14.2313042,18.8643793 L14.2313042,15.8749886 C14.2313042,15.3173771 14.6628708,14.8643793 15.196204,14.8643793 L21.2664043,14.8643793 C21.7997375,14.8643793 22.2313042,15.3173771 22.2313042,15.8749886 L22.2313042,18.8643793 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <path id="Path-Copy-3" d="M42.7694142,18.9135933 L34.7694142,18.9135933 L34.7694142,15.9242026 C34.7694142,15.3665911 35.2009809,14.9135933 35.7343141,14.9135933 L41.8045143,14.9135933 C42.3378475,14.9135933 42.7694142,15.3665911 42.7694142,15.9242026 L42.7694142,18.9135933 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <use id="Rectangle" stroke="#3665AC" mask="url(#mask-2)" stroke-width="2.27272727" stroke-dasharray="1.136363636363636"></use>
+                                      <path id="Path-4-Copy" d="M37.511102,62.9520607 L36.8307967,64.9364438 C36.6272666,65.530121 36.9435433,66.1763852 37.5372205,66.3799153 C37.6558321,66.4205789 37.780356,66.4413313 37.9057443,66.4413313 L39.8901275,66.4413313 C40.5177238,66.4413313 41.0264911,65.932564 41.0264911,65.3049677 C41.0264911,65.0831765 40.9615871,64.8662334 40.8397808,64.6808836 L39.5357029,62.6965005 C39.1910308,62.1720215 38.4864446,62.0262591 37.9619656,62.3709312 C37.7514099,62.5093022 37.5928105,62.7137249 37.511102,62.9520607 Z" fill="#E0E8F6" transform="translate(39.155786, 63.600422) rotate(-21.000000) translate(-39.155786, -63.600422) "></path>
+                                      <path id="Path-4-Copy" d="M36.8732478,62.8152646 L36.1929425,64.7996477 C35.9894124,65.3933249 36.3056891,66.0395892 36.8993663,66.2431193 C37.0179779,66.2837829 37.1425018,66.3045353 37.2678902,66.3045353 L39.2522733,66.3045353 C39.8798696,66.3045353 40.3886369,65.7957679 40.3886369,65.1681716 C40.3886369,64.9463805 40.323733,64.7294373 40.2019266,64.5440876 L38.8978488,62.5597045 C38.5531767,62.0352254 37.8485904,61.8894631 37.3241114,62.2341352 C37.1135557,62.3725061 36.9549563,62.5769289 36.8732478,62.8152646 Z" fill="#E64129" transform="translate(38.517932, 63.463626) rotate(-21.000000) translate(-38.517932, -63.463626) "></path>
+                                    </g>
+                                    <g id="Group-3" transform="translate(86.166085, 15.000000)">
+                                      <polygon id="Triangle" fill="#C6CCCE" points="2 0 4 4 0 4"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(2.000000, 77.000000) scale(1, -1) translate(-2.000000, -77.000000) " points="2 75 4 79 0 79"></polygon>
+                                      <line id="Line-3" x1="2.17102733" y1="6" x2="2.17102733" y2="73" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                    <g id="Group-11" transform="translate(25.166085, 98.000000)">
+                                      <polygon id="Triangle" fill="#C6CCCE" transform="translate(2.000000, 2.000000) rotate(270.000000) translate(-2.000000, -2.000000) " points="2 0 4 4 0 4"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(54.000000, 2.000000) scale(1, -1) rotate(-270.000000) translate(-54.000000, -2.000000) " points="54 0 56 4 52 4"></polygon>
+                                      <line id="Line" x1="6.54145709" y1="2.384113" x2="50.5414571" y2="2.384113" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                    <g id="Group-12" transform="translate(14.000000, 90.469849) rotate(8.000000) translate(-14.000000, -90.469849) translate(3.000000, 81.469849)">
+                                      <polygon id="Triangle" fill="#C6CCCE" transform="translate(3.000000, 3.000000) rotate(304.000000) translate(-3.000000, -3.000000) " points="3 1 5 5 1 5"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(19.000000, 15.000000) scale(1, -1) rotate(-303.000000) translate(-19.000000, -15.000000) " points="19 13 21 17 17 17"></polygon>
+                                      <line id="Line-2" x1="5.88043477" y1="5.06959374" x2="16.1258309" y2="13.0715846" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="details"> <span>Cabin baggage</span><span>1 fully-collapsible baby stroller that can be stowed is allowed.</span></div>
+                            </figure>
+                            <figure class="figure-two"> 
+                              <svg class="sc-hMqMXs irGMpL" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 61 52" preserveAspectRatio="xMidYMid meet" size="120" width="120" height="65">
+                                <g fill="none" fill-rule="evenodd">
+                                  <g>
+                                    <g transform="translate(-571 -248) translate(571 248)">
+                                      <rect width="59.473" height="40.888" x=".595" y="6.071" fill="#EAEFF6" rx="6.899"></rect>
+                                      <path fill="#3665AC" d="M20.807 6.071c.923-3.72 2.9-5.58 5.935-5.58h7.229c3.041.139 4.991 2 5.85 5.587 0-.005-1.013-.007-3.04-.007-.628-1.738-1.565-2.608-2.81-2.608h-6.635c-1.749.018-2.904.89-3.467 2.615-.025.015-1.046.012-3.062-.007z"></path>
+                                      <path fill="#FFF" d="M14.273 6.666H45.794V46.513000000000005H14.273z"></path>
+                                      <path fill="#E0E8F6" d="M35.389 23.047V15.77c.24-2.53 1.392-3.796 3.456-3.796s3.24 1.265 3.529 3.796v7.278c0 .215-.174.388-.388.388h-6.209c-.214 0-.388-.173-.388-.388z"></path>
+                                      <path fill="#E64129" d="M35.203 22.093v-7.148c.212-2.36 1.227-3.539 3.045-3.539 1.818 0 2.854 1.18 3.109 3.54v7.147h-6.154z"></path>
+                                      <circle cx="38.063" cy="13.803" r="1" fill="#EAEFF6"></circle>
+                                      <path fill="#FFF" d="M.953 39.17V14.278c4.776-1.014 7.305-3.506 7.589-7.475h3.17v39.925h-3.17c-.078-.965-.182-1.653-.312-2.063-.49-1.553-1.284-2.64-1.898-3.25-.585-.583-1.612-1.365-3.071-1.85-.451-.15-1.22-.281-2.308-.395z"></path>
+                                      <path fill="#FFF" d="M49.362 39.033V14.14c4.776-1.013 7.305-3.505 7.589-7.474h3.17V46.59h-3.17c-.078-.966-.182-1.653-.311-2.063-.49-1.553-1.285-2.64-1.898-3.25-.585-.583-1.613-1.365-3.072-1.85-.451-.15-1.22-.281-2.308-.395z" transform="matrix(-1 0 0 1 109.483 0)"></path>
+                                      <path fill="#3665AC" d="M55.019 46.443h-2.587c.185-3.713 3.18-6.694 6.91-6.878v2.555c0 2.384-1.94 4.323-4.323 4.323zm-8.76 0h2.366V6.803H46.26v39.64zm-34.222 0h2.366V6.803h-2.366v39.64zM1.32 42.12v-2.555c3.73.184 6.726 3.165 6.91 6.878H5.643c-2.384 0-4.323-1.94-4.323-4.323zM5.643 6.803H8.23c-.184 3.713-3.18 6.694-6.91 6.878v-2.555c0-2.384 1.94-4.323 4.323-4.323zm5.67 0v39.64H8.955C8.769 42.33 5.45 39.026 1.32 38.84V14.406c4.13-.186 7.449-3.49 7.636-7.603h2.356zm13.019 0h13.553v4.32c-1.732.184-3.09 1.636-3.09 3.416v7.916c0 .201.163.363.363.363h6.18c.2 0 .363-.162.363-.363V14.54c0-1.78-1.359-3.232-3.09-3.416v-4.32h6.923v39.64H15.128V6.803h9.204zm11.963-.725H24.368c.177-1.206 1.209-2.138 2.464-2.138h6.998c1.256 0 2.288.932 2.465 2.138zm1.15 6.944c-.443.442-.443 1.162 0 1.605.214.214.5.332.803.332.303 0 .588-.118.802-.332.444-.443.444-1.163 0-1.605-.127-.128-.279-.215-.44-.269v-.905c1.331.18 2.365 1.311 2.365 2.69v7.555H35.52v-7.554c0-1.38 1.034-2.512 2.365-2.69v.904c-.161.055-.313.14-.44.269zm.472.574c.056.127.183.216.33.216.148 0 .275-.09.331-.216.11.159.102.376-.04.518-.16.16-.42.16-.58 0-.077-.078-.12-.18-.12-.29 0-.084.032-.16.079-.228zM26.832.849h6.998c2.961 0 5.393 2.314 5.58 5.229h-2.374c-.18-1.609-1.55-2.864-3.206-2.864h-6.998c-1.656 0-3.025 1.255-3.205 2.864h-2.375c.188-2.915 2.62-5.229 5.58-5.229zm32.51 13.557V38.84c-4.13.186-7.45 3.49-7.636 7.603H49.35V6.803h2.356c.187 4.113 3.506 7.417 7.636 7.603zm0-3.28v2.555c-3.73-.184-6.725-3.165-6.91-6.878h2.588c2.383 0 4.322 1.94 4.322 4.323zM40.13 6.078c-.19-3.314-2.938-5.954-6.3-5.954h-6.997c-3.36 0-6.108 2.64-6.298 5.954H5.644c-2.784 0-5.05 2.264-5.05 5.048V42.12c0 2.783 2.266 5.048 5.05 5.048h49.375c2.783 0 5.048-2.265 5.048-5.048V11.126c0-2.784-2.264-5.048-5.047-5.048H40.129z"></path>
+                                      <rect width="60.662" height="42.226" y="5.476" rx="6.899"></rect>
+                                      <rect width="7.761" height="4.657" x="9.318" y="33.497" fill="#5992E8" rx=".776"></rect>
+                                      <rect width="7.761" height="4.657" x="43.467" y="33.497" fill="#5992E8" rx=".776"></rect>
+                                      <ellipse cx="29.963" cy="50.448" fill="#EAEFF6" rx="19.093" ry="1.552" transform="matrix(1 0 0 -1 0 100.896)"></ellipse>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="details"> <span>Cabin baggage</span><span>1 fully-collapsible baby</span></div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu cancel-change-section"> 
+                  <table class="text-center"> 
+                    <tr> 
+                      <th class="border-none"> </th>
+                      <th class="color-grey">Per adult</th>
+                    </tr>
+                    <tr> 
+                      <th class="border-l-none">Cancellation Fees</th>
+                      <th> <i class="far fa-times-circle"></i><span>Not primmited</span></th>
+                    </tr>
+                    <tr> 
+                      <th class="border-l-none">Date Change Fees</th>
+                      <th> <i class="far fa-check-circle true"></i><span class="true">AED 270</span></th>
+                    </tr>
+                  </table>
+                  <div class="note"> 
+                    <p>All fees are applicable up to 28 hours before departure time. Additional fees may apply after that.</p>
+                  </div>
+                  <div class="FAQ-cancelation">
+                    <div class="header"> 
+                      <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <g transform="translate(-305 -530) translate(295 510) translate(10 20)">
+                                <circle cx="15" cy="15" r="15" fill="#E9F4F5"></circle>
+                                <g fill="#231F20" fill-rule="nonzero" stroke="#E9F4F5" stroke-width=".1">
+                                  <path d="M.005.44v20.769c0 .22.178.4.4.4H15.58c.22 0 .4-.18.4-.4V4.434c0-.009-.005-.016-.005-.025-.002-.035-.01-.07-.02-.103-.005-.013-.008-.025-.014-.037-.02-.044-.046-.083-.08-.117L11.868.158c-.034-.034-.074-.061-.117-.08-.012-.005-.025-.01-.037-.013-.033-.012-.068-.019-.104-.021-.006.001-.014-.003-.023-.003H.404c-.22 0-.4.178-.4.399zm14.612 3.595h-2.63v-2.63l2.63 2.63zM.803.839h10.385v3.595c0 .22.179.4.4.4h3.594V20.81H.803V.84z" transform="translate(6.658 4.11)"></path>
+                                </g>
+                                <path fill="#AFC1DE" d="M11.451 4.93l10.385-.06.019 20.05-14.398.077V8.924h3.494c.277 0 .5-.224.5-.5V4.93z" transform="matrix(-1 0 0 1 29.312 0)"></path>
+                                <rect width="11" height="1" x="9" y="11" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="14" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="17" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="20" fill="#FFF" rx=".5"></rect>
+                                <circle cx="7.457" cy="4.562" r="4.15" fill="#3665AC" stroke="#231F20" stroke-width=".7"></circle>
+                                <g fill="#FFF" fill-rule="nonzero">
+                                  <path d="M.433 3.467c.24 0 .434-.194.434-.434v-2.6C.867.194.673 0 .433 0 .194 0 0 .194 0 .433v2.6c0 .24.194.434.433.434zM.433 5.2c.24 0 .434-.194.434-.433v-.434c0-.239-.194-.433-.434-.433-.239 0-.433.194-.433.433v.434c0 .239.194.433.433.433z" transform="translate(6.895 2)"></path>
+                                </g>
+                                <path fill="#FFF" d="M18.645 5.467L21.405 8.258 18.645 8.145z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>
+                         Cancellation & change details<br>Learn more about the rules and fees</p><i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="toggle-menu"> 
+                      <ul> 
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="FAQ"> 
+                    <div class="header"> 
+                      <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <g>
+                                <g transform="translate(-60 -709) translate(50 534) translate(0 155) translate(10 20)">
+                                  <circle cx="17" cy="15" r="15" fill="#EAEFF6"></circle>
+                                  <path fill="#AFC1DE" stroke="#231F20" stroke-width=".812" d="M20.737 11.976c2.02 0 3.847.818 5.17 2.141s2.142 3.151 2.142 5.17c0 1.39-.388 2.689-1.061 3.795h0l1.324 3.712-4.196-1.021c-1.01.527-2.16.825-3.379.825-2.018 0-3.846-.818-5.17-2.141-1.322-1.323-2.14-3.151-2.14-5.17s.818-3.847 2.14-5.17c1.324-1.323 3.152-2.141 5.17-2.141z"></path>
+                                  <g fill="#FFF" fill-rule="nonzero">
+                                    <path d="M.544 0C.26 0-.013.25 0 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C1.074.25.85 0 .544 0zM2.544 0C2.26 0 1.987.25 2 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C3.074.25 2.85 0 2.544 0zM4.544 0C4.26 0 3.987.25 4 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C5.074.25 4.85 0 4.544 0z" transform="rotate(-1 1084.062 -1037.109)"></path>
+                                  </g>
+                                  <path fill="#AFC1DE" stroke="#231F20" stroke-width=".8" d="M10.196 1.4c-2.513 0-4.788 1.019-6.435 2.665C2.114 5.712 1.096 7.987 1.096 10.5c0 1.713.473 3.316 1.297 4.684h0L.734 19.83l5.288-1.24c1.25.646 2.67 1.011 4.174 1.011 2.513 0 4.788-1.019 6.435-2.665 1.646-1.647 2.665-3.922 2.665-6.435 0-2.513-1.019-4.788-2.665-6.435C14.984 2.42 12.709 1.4 10.196 1.4z"></path>
+                                  <g transform="matrix(-1 0 0 1 19.082 1.954)">
+                                    <mask id="2n91xy0d5b" fill="#fff">
+                                      <ellipse cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                    </mask>
+                                    <ellipse fill="#3665AC" cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                    <ellipse cx="9.783" cy="8.751" fill="#AFC1DE" mask="url(#2n91xy0d5b)" rx="8" ry="9.5"></ellipse>
+                                  </g>
+                                  <g fill="#FFF" fill-rule="nonzero">
+                                    <path d="M2.704 8.417c-.284 0-.557.25-.543.544.013.294.238.543.543.543.284 0 .557-.25.543-.543-.013-.295-.238-.544-.543-.544zM2.704 0C1.213 0 0 1.213 0 2.704c0 .3.243.543.543.543.3 0 .544-.243.544-.543 0-.892.725-1.617 1.617-1.617s1.617.725 1.617 1.617-.725 1.617-1.617 1.617c-.3 0-.543.243-.543.543v2.217c0 .3.243.544.543.544.3 0 .543-.244.543-.544V5.353C4.48 5.101 5.408 4.01 5.408 2.704 5.408 1.213 4.195 0 2.704 0z" transform="translate(7.106 5.529)"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>
+                         Frequently asked questions <br>Find useful answers to common questions here</p><i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="toggle-menu"> 
+                      <ul> 
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu fare-detail-section">
+                  <div class="header"> 
+                    <h2>Fare Details </h2>
+                    <ul> 
+                      <li> <span class="desc">Fare </span><span class="info">AED 1,030</span></li>
+                      <li> <span class="desc">Taxes & fees </span><span class="info">AED 1,030</span></li>
+                      <li> <span class="desc">VAT </span><span class="info">AED 1,030</span></li>
+                    </ul>
+                  </div>
+                  <div class="footer"> <span class="total">Total (incl.VAT)</span><span class="price">AED 1,310</span></div>
+                </div>
+              </div>
+              <div class="menu-footer"> 
+                <button class="hide-details">Hide Details</button>
+                <button class="select-flight">Select flight AED 1,040   <i class="fas fa-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu two-stops">
+          <div class="con-btn"> 
+            <button class="close-btn"> <i class="fas fa-times"></i>Close </button>
+            <div class="content"> 
+              <div class="ticket">
+                <div class="start-airport"> <img src="img/ksa.png" alt=""></div>
+                <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                <div class="flight-info">
+                  <div class="stop-count"><span class="count">2 stops </span><i class="fas fa-plane"></i></div>
+                  <div class="flight-moreinfo">
+                    <div class="flight-duration"><span class="time"> <i class="fas fa-clock"></i><span>10h 50m</span></span><span class="duration"> <i class="fas fa-suitcase-rolling"></i>Baggage included </span></div>
+                  </div>
+                </div>
+                <div class="flight-arrive date"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                <div class="card-foot"> 
+                  <div class="flight-price"> <span class="price-kind">AED</span><span class="cost"> 950</span></div>
+                  <button class="select-flight">Select Flight <i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="menu-nav"> 
+                <ul class="nav-list">
+                  <li class="nav-item active">
+                    <button>Flight itinerary</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button>Baggage info</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button>Cancel & change</button>
+                  </li>
+                  <li class="nav-item"> 
+                    <button> Fare details</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="warpper"> 
+                <div class="supmenu Flightitinerary-section active">
+                  <div class="menu-duration"> 
+                    <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span>
+                      <div class="total-duration">Total duration: <span>07h 10m</span></div>
+                    </div>
+                    <div class="submenu">
+                      <div class="ticket">
+                        <div class="start-airport"> <img src="img/ksa.png" alt="">
+                          <ul> 
+                            <li>Saudia</li>
+                            <li>SV-1429</li>
+                            <li>AIRBUS</li>
+                            <li>Economy class</li>
+                          </ul>
+                        </div>
+                        <div class="flight-deprature">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                          </ul>
+                        </div>
+                        <div class="flight-arrivall">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                            <li>jedahh ,Sauidia Arabia </li>
+                            <li class="terminal">Terminal 1 (new airport)</li>
+                          </ul>
+                        </div>
+                        <div class="card-foot"> 
+                          <div class="flight-time"><span>01h 00m</span></div>
+                        </div>
+                      </div>
+                      <div class="waiting-time">
+                        <p> <i class="far fa-clock"></i>Waiting Time in JED, Jeddah</p><span class="time">03h 50m</span>
+                      </div>
+                      <div class="ticket">
+                        <div class="start-airport"> <img src="img/ksa.png" alt="">
+                          <ul> 
+                            <li>Saudia</li>
+                            <li>SV-1429</li>
+                            <li>AIRBUS</li>
+                            <li>Economy class</li>
+                          </ul>
+                        </div>
+                        <div class="flight-deprature">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                          </ul>
+                        </div>
+                        <div class="flight-arrivall">
+                          <ul> 
+                            <li class="timeing">MED<span class="time">06:15</span></li>
+                            <li class="day">Tue, 13 Jul </li>
+                            <li class="airport">Prince ali abdelbaky airport</li>
+                            <li class="airport-location">Madinah, Saudia Arabia </li>
+                            <li>jedahh ,Sauidia Arabia </li>
+                            <li class="terminal">Terminal 1 (new airport)</li>
+                          </ul>
+                        </div>
+                        <div class="card-foot"> 
+                          <div class="flight-time"><span>01h 00m</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu baggage-info-section">
+                  <div class="container-fluid"> 
+                    <div class="row"> 
+                      <div class="col-md-6" style="border-right: 2px solid #eee;"> 
+                        <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span></div>
+                        <div class="capinBaggage">
+                          <ul> 
+                            <li>
+                              <div class="desc"><i class="fas fa-suitcase-rolling"> </i>Capin baggage </div>
+                              <div class="info">
+                                 7 KG (max 1 Bag)    </div>
+                            </li>
+                            <li>
+                              <div class="desc"><i class="fas fa-suitcase-rolling"> </i>Capin baggage </div>
+                              <div class="info">
+                                 2 Bags <i class="fas fa-info">  </i></div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6"> 
+                        <div class="aireline-baggage-info-section"> 
+                          <h3 class="header">Airline baggage Information</h3>
+                        </div>
+                        <div class="baggage-dimensions-section">
+                          <h4 class="header"> Baggage dimension </h4>
+                          <div class="capin-baggage"> 
+                            <figure class="figure-one"> 
+                              <svg class="sc-hMqMXs irGMpL" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 91 102" preserveAspectRatio="xMidYMid meet" size="120" width="100" height="100">
+                                <defs>
+                                  <rect id="path-1" x="17.0454545" y="62.5690178" width="21.5909091" height="1"></rect>
+                                  <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="21.5909091" height="0.909090909" fill="white"></mask>
+                                </defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                  <g id="icon_cabin_tjw" transform="translate(-0.166085, 0.000000)">
+                                    <g id="Alm" transform="translate(25.166085, 0.000000)">
+                                      <rect id="Rectangle" stroke="#3665AC" stroke-width="0.909090909" fill="#FFFFFF" x="0.454545455" y="19.4602988" width="55.1307597" height="66.1363636" rx="4.3357718"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="6.47807338" y="33.3063856" width="1.704545" height="36.5" rx="0.8522725"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="5.68708249" y="32.7751984" width="1.704545" height="37.5" rx="0.8522725"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="16.8429201" y="33.3704044" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="16.0519292" y="32.8392172" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="27.4780734" y="33.3063856" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="26.6870825" y="32.7751984" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="38.4651532" y="33.661352" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="37.6741623" y="33.1301648" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-12" fill="#E0E8F6" x="48.4780734" y="33.3063856" width="1.70454545" height="36.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-8" fill="#AFC1DE" x="47.6870825" y="32.7751984" width="1.70454545" height="37.5" rx="0.852272727"></rect>
+                                      <rect id="Rectangle-Copy-16" stroke="#5992E8" stroke-width="2.27272727" x="18.1818182" y="2.13636364" width="20.4545455" height="17.7272727" rx="4.3357718"></rect>
+                                      <path id="Combined-Shape" d="M38.8460464,54.5454545 C39.9178174,54.5454545 40.888124,54.9798756 41.5904878,55.6822394 C42.2928517,56.3846032 42.7272727,57.3549098 42.7272727,58.4266809 L42.7272727,58.4266809 L42.7272727,75.2272727 L14.0909091,75.2272727 L14.0909091,58.4266809 C14.0909091,57.3549098 14.5253301,56.3846032 15.227694,55.6822394 C15.9300578,54.9798756 16.9003644,54.5454545 17.9721354,54.5454545 L17.9721354,54.5454545 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#FFFFFF"></path>
+                                      <path id="Rectangle-Copy-14" d="M55.5853051,73.4984379 L55.5853051,81.7154361 C55.5853051,82.7872071 55.150884,83.7575137 54.4485202,84.4598775 C53.7461564,85.1622414 52.7758498,85.5966624 51.7040788,85.5966624 L51.7040788,85.5966624 L4.3357718,85.5966624 C3.26400074,85.5966624 2.29369415,85.1622414 1.59133033,84.4598775 C0.888966511,83.7575137 0.454545455,82.7872071 0.454545455,81.7154361 L0.454545455,81.7154361 L0.454545455,73.4984379 L55.5853051,73.4984379 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#EAEFF6"></path>
+                                      <path id="Rectangle-Copy-15" d="M55.5853051,19.3181818 L55.5853051,24.7551373 C55.5853051,25.8269083 55.150884,26.7972149 54.4485202,27.4995788 C53.7461564,28.2019426 52.7758498,28.6363636 51.7040788,28.6363636 L51.7040788,28.6363636 L4.3357718,28.6363636 C3.26400074,28.6363636 2.29369415,28.2019426 1.59133033,27.4995788 C0.888966511,26.7972149 0.454545455,25.8269083 0.454545455,24.7551373 L0.454545455,24.7551373 L0.454545455,19.3181818 L55.5853051,19.3181818 Z" stroke="#3665AC" stroke-width="0.909090909" fill="#EAEFF6" transform="translate(28.019925, 23.977273) rotate(-180.000000) translate(-28.019925, -23.977273) "></path>
+                                      <ellipse id="shadow" fill="#EAEFF6" transform="translate(27.600000, 94.000000) scale(1, -1) translate(-27.600000, -94.000000) " cx="27.6" cy="94" rx="24.6" ry="2"></ellipse>
+                                      <ellipse id="Oval" fill="#3665AC" cx="16.1918079" cy="89.8470209" rx="4.54545455" ry="4.57183049"></ellipse>
+                                      <ellipse id="Oval-Copy" fill="#3665AC" cx="40.6050659" cy="89.8470209" rx="4.54545455" ry="4.57183049"></ellipse>
+                                      <circle id="Oval" fill="#FFFFFF" cx="16.1272511" cy="89.8329994" r="2.27272727"></circle>
+                                      <circle id="Oval-Copy-2" fill="#FFFFFF" cx="40.5965113" cy="89.9304281" r="2.27272727"></circle>
+                                      <path id="Path-Copy" d="M41.5584416,4.54545455 L15.2597403,4.54545455 C13.1071808,4.54545455 11.3636364,3.52783196 11.3636364,2.27272727 C11.3636364,1.01762244 13.1071808,2.27373675e-13 15.2597403,2.27373675e-13 L41.5584416,2.27373675e-13 C43.7100496,2.27373675e-13 45.4545455,1.01762244 45.4545455,2.27272727 C45.4545455,3.52783196 43.7100496,4.54545455 41.5584416,4.54545455 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <path id="Path-Copy-2" d="M22.2313042,18.8643793 L14.2313042,18.8643793 L14.2313042,15.8749886 C14.2313042,15.3173771 14.6628708,14.8643793 15.196204,14.8643793 L21.2664043,14.8643793 C21.7997375,14.8643793 22.2313042,15.3173771 22.2313042,15.8749886 L22.2313042,18.8643793 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <path id="Path-Copy-3" d="M42.7694142,18.9135933 L34.7694142,18.9135933 L34.7694142,15.9242026 C34.7694142,15.3665911 35.2009809,14.9135933 35.7343141,14.9135933 L41.8045143,14.9135933 C42.3378475,14.9135933 42.7694142,15.3665911 42.7694142,15.9242026 L42.7694142,18.9135933 Z" fill="#3665AC" fill-rule="nonzero"></path>
+                                      <use id="Rectangle" stroke="#3665AC" mask="url(#mask-2)" stroke-width="2.27272727" stroke-dasharray="1.136363636363636"></use>
+                                      <path id="Path-4-Copy" d="M37.511102,62.9520607 L36.8307967,64.9364438 C36.6272666,65.530121 36.9435433,66.1763852 37.5372205,66.3799153 C37.6558321,66.4205789 37.780356,66.4413313 37.9057443,66.4413313 L39.8901275,66.4413313 C40.5177238,66.4413313 41.0264911,65.932564 41.0264911,65.3049677 C41.0264911,65.0831765 40.9615871,64.8662334 40.8397808,64.6808836 L39.5357029,62.6965005 C39.1910308,62.1720215 38.4864446,62.0262591 37.9619656,62.3709312 C37.7514099,62.5093022 37.5928105,62.7137249 37.511102,62.9520607 Z" fill="#E0E8F6" transform="translate(39.155786, 63.600422) rotate(-21.000000) translate(-39.155786, -63.600422) "></path>
+                                      <path id="Path-4-Copy" d="M36.8732478,62.8152646 L36.1929425,64.7996477 C35.9894124,65.3933249 36.3056891,66.0395892 36.8993663,66.2431193 C37.0179779,66.2837829 37.1425018,66.3045353 37.2678902,66.3045353 L39.2522733,66.3045353 C39.8798696,66.3045353 40.3886369,65.7957679 40.3886369,65.1681716 C40.3886369,64.9463805 40.323733,64.7294373 40.2019266,64.5440876 L38.8978488,62.5597045 C38.5531767,62.0352254 37.8485904,61.8894631 37.3241114,62.2341352 C37.1135557,62.3725061 36.9549563,62.5769289 36.8732478,62.8152646 Z" fill="#E64129" transform="translate(38.517932, 63.463626) rotate(-21.000000) translate(-38.517932, -63.463626) "></path>
+                                    </g>
+                                    <g id="Group-3" transform="translate(86.166085, 15.000000)">
+                                      <polygon id="Triangle" fill="#C6CCCE" points="2 0 4 4 0 4"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(2.000000, 77.000000) scale(1, -1) translate(-2.000000, -77.000000) " points="2 75 4 79 0 79"></polygon>
+                                      <line id="Line-3" x1="2.17102733" y1="6" x2="2.17102733" y2="73" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                    <g id="Group-11" transform="translate(25.166085, 98.000000)">
+                                      <polygon id="Triangle" fill="#C6CCCE" transform="translate(2.000000, 2.000000) rotate(270.000000) translate(-2.000000, -2.000000) " points="2 0 4 4 0 4"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(54.000000, 2.000000) scale(1, -1) rotate(-270.000000) translate(-54.000000, -2.000000) " points="54 0 56 4 52 4"></polygon>
+                                      <line id="Line" x1="6.54145709" y1="2.384113" x2="50.5414571" y2="2.384113" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                    <g id="Group-12" transform="translate(14.000000, 90.469849) rotate(8.000000) translate(-14.000000, -90.469849) translate(3.000000, 81.469849)">
+                                      <polygon id="Triangle" fill="#C6CCCE" transform="translate(3.000000, 3.000000) rotate(304.000000) translate(-3.000000, -3.000000) " points="3 1 5 5 1 5"></polygon>
+                                      <polygon id="Triangle-Copy" fill="#C6CCCE" transform="translate(19.000000, 15.000000) scale(1, -1) rotate(-303.000000) translate(-19.000000, -15.000000) " points="19 13 21 17 17 17"></polygon>
+                                      <line id="Line-2" x1="5.88043477" y1="5.06959374" x2="16.1258309" y2="13.0715846" stroke="#97A1A6" stroke-width="0.4" stroke-linecap="square" stroke-dasharray="2"></line>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="details"> <span>Cabin baggage</span><span>1 fully-collapsible baby stroller that can be stowed is allowed.</span></div>
+                            </figure>
+                            <figure class="figure-two"> 
+                              <svg class="sc-hMqMXs irGMpL" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 61 52" preserveAspectRatio="xMidYMid meet" size="120" width="120" height="65">
+                                <g fill="none" fill-rule="evenodd">
+                                  <g>
+                                    <g transform="translate(-571 -248) translate(571 248)">
+                                      <rect width="59.473" height="40.888" x=".595" y="6.071" fill="#EAEFF6" rx="6.899"></rect>
+                                      <path fill="#3665AC" d="M20.807 6.071c.923-3.72 2.9-5.58 5.935-5.58h7.229c3.041.139 4.991 2 5.85 5.587 0-.005-1.013-.007-3.04-.007-.628-1.738-1.565-2.608-2.81-2.608h-6.635c-1.749.018-2.904.89-3.467 2.615-.025.015-1.046.012-3.062-.007z"></path>
+                                      <path fill="#FFF" d="M14.273 6.666H45.794V46.513000000000005H14.273z"></path>
+                                      <path fill="#E0E8F6" d="M35.389 23.047V15.77c.24-2.53 1.392-3.796 3.456-3.796s3.24 1.265 3.529 3.796v7.278c0 .215-.174.388-.388.388h-6.209c-.214 0-.388-.173-.388-.388z"></path>
+                                      <path fill="#E64129" d="M35.203 22.093v-7.148c.212-2.36 1.227-3.539 3.045-3.539 1.818 0 2.854 1.18 3.109 3.54v7.147h-6.154z"></path>
+                                      <circle cx="38.063" cy="13.803" r="1" fill="#EAEFF6"></circle>
+                                      <path fill="#FFF" d="M.953 39.17V14.278c4.776-1.014 7.305-3.506 7.589-7.475h3.17v39.925h-3.17c-.078-.965-.182-1.653-.312-2.063-.49-1.553-1.284-2.64-1.898-3.25-.585-.583-1.612-1.365-3.071-1.85-.451-.15-1.22-.281-2.308-.395z"></path>
+                                      <path fill="#FFF" d="M49.362 39.033V14.14c4.776-1.013 7.305-3.505 7.589-7.474h3.17V46.59h-3.17c-.078-.966-.182-1.653-.311-2.063-.49-1.553-1.285-2.64-1.898-3.25-.585-.583-1.613-1.365-3.072-1.85-.451-.15-1.22-.281-2.308-.395z" transform="matrix(-1 0 0 1 109.483 0)"></path>
+                                      <path fill="#3665AC" d="M55.019 46.443h-2.587c.185-3.713 3.18-6.694 6.91-6.878v2.555c0 2.384-1.94 4.323-4.323 4.323zm-8.76 0h2.366V6.803H46.26v39.64zm-34.222 0h2.366V6.803h-2.366v39.64zM1.32 42.12v-2.555c3.73.184 6.726 3.165 6.91 6.878H5.643c-2.384 0-4.323-1.94-4.323-4.323zM5.643 6.803H8.23c-.184 3.713-3.18 6.694-6.91 6.878v-2.555c0-2.384 1.94-4.323 4.323-4.323zm5.67 0v39.64H8.955C8.769 42.33 5.45 39.026 1.32 38.84V14.406c4.13-.186 7.449-3.49 7.636-7.603h2.356zm13.019 0h13.553v4.32c-1.732.184-3.09 1.636-3.09 3.416v7.916c0 .201.163.363.363.363h6.18c.2 0 .363-.162.363-.363V14.54c0-1.78-1.359-3.232-3.09-3.416v-4.32h6.923v39.64H15.128V6.803h9.204zm11.963-.725H24.368c.177-1.206 1.209-2.138 2.464-2.138h6.998c1.256 0 2.288.932 2.465 2.138zm1.15 6.944c-.443.442-.443 1.162 0 1.605.214.214.5.332.803.332.303 0 .588-.118.802-.332.444-.443.444-1.163 0-1.605-.127-.128-.279-.215-.44-.269v-.905c1.331.18 2.365 1.311 2.365 2.69v7.555H35.52v-7.554c0-1.38 1.034-2.512 2.365-2.69v.904c-.161.055-.313.14-.44.269zm.472.574c.056.127.183.216.33.216.148 0 .275-.09.331-.216.11.159.102.376-.04.518-.16.16-.42.16-.58 0-.077-.078-.12-.18-.12-.29 0-.084.032-.16.079-.228zM26.832.849h6.998c2.961 0 5.393 2.314 5.58 5.229h-2.374c-.18-1.609-1.55-2.864-3.206-2.864h-6.998c-1.656 0-3.025 1.255-3.205 2.864h-2.375c.188-2.915 2.62-5.229 5.58-5.229zm32.51 13.557V38.84c-4.13.186-7.45 3.49-7.636 7.603H49.35V6.803h2.356c.187 4.113 3.506 7.417 7.636 7.603zm0-3.28v2.555c-3.73-.184-6.725-3.165-6.91-6.878h2.588c2.383 0 4.322 1.94 4.322 4.323zM40.13 6.078c-.19-3.314-2.938-5.954-6.3-5.954h-6.997c-3.36 0-6.108 2.64-6.298 5.954H5.644c-2.784 0-5.05 2.264-5.05 5.048V42.12c0 2.783 2.266 5.048 5.05 5.048h49.375c2.783 0 5.048-2.265 5.048-5.048V11.126c0-2.784-2.264-5.048-5.047-5.048H40.129z"></path>
+                                      <rect width="60.662" height="42.226" y="5.476" rx="6.899"></rect>
+                                      <rect width="7.761" height="4.657" x="9.318" y="33.497" fill="#5992E8" rx=".776"></rect>
+                                      <rect width="7.761" height="4.657" x="43.467" y="33.497" fill="#5992E8" rx=".776"></rect>
+                                      <ellipse cx="29.963" cy="50.448" fill="#EAEFF6" rx="19.093" ry="1.552" transform="matrix(1 0 0 -1 0 100.896)"></ellipse>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <div class="details"> <span>Cabin baggage</span><span>1 fully-collapsible baby</span></div>
+                            </figure>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu cancel-change-section"> 
+                  <table class="text-center"> 
+                    <tr> 
+                      <th class="border-none"> </th>
+                      <th class="color-grey">Per adult</th>
+                    </tr>
+                    <tr> 
+                      <th class="border-l-none">Cancellation Fees</th>
+                      <th> <i class="far fa-times-circle"></i><span>Not primmited</span></th>
+                    </tr>
+                    <tr> 
+                      <th class="border-l-none">Date Change Fees</th>
+                      <th> <i class="far fa-check-circle true"></i><span class="true">AED 270</span></th>
+                    </tr>
+                  </table>
+                  <div class="note"> 
+                    <p>All fees are applicable up to 28 hours before departure time. Additional fees may apply after that.</p>
+                  </div>
+                  <div class="FAQ-cancelation">
+                    <div class="header"> 
+                      <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <g transform="translate(-305 -530) translate(295 510) translate(10 20)">
+                                <circle cx="15" cy="15" r="15" fill="#E9F4F5"></circle>
+                                <g fill="#231F20" fill-rule="nonzero" stroke="#E9F4F5" stroke-width=".1">
+                                  <path d="M.005.44v20.769c0 .22.178.4.4.4H15.58c.22 0 .4-.18.4-.4V4.434c0-.009-.005-.016-.005-.025-.002-.035-.01-.07-.02-.103-.005-.013-.008-.025-.014-.037-.02-.044-.046-.083-.08-.117L11.868.158c-.034-.034-.074-.061-.117-.08-.012-.005-.025-.01-.037-.013-.033-.012-.068-.019-.104-.021-.006.001-.014-.003-.023-.003H.404c-.22 0-.4.178-.4.399zm14.612 3.595h-2.63v-2.63l2.63 2.63zM.803.839h10.385v3.595c0 .22.179.4.4.4h3.594V20.81H.803V.84z" transform="translate(6.658 4.11)"></path>
+                                </g>
+                                <path fill="#AFC1DE" d="M11.451 4.93l10.385-.06.019 20.05-14.398.077V8.924h3.494c.277 0 .5-.224.5-.5V4.93z" transform="matrix(-1 0 0 1 29.312 0)"></path>
+                                <rect width="11" height="1" x="9" y="11" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="14" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="17" fill="#FFF" rx=".5"></rect>
+                                <rect width="11" height="1" x="9" y="20" fill="#FFF" rx=".5"></rect>
+                                <circle cx="7.457" cy="4.562" r="4.15" fill="#3665AC" stroke="#231F20" stroke-width=".7"></circle>
+                                <g fill="#FFF" fill-rule="nonzero">
+                                  <path d="M.433 3.467c.24 0 .434-.194.434-.434v-2.6C.867.194.673 0 .433 0 .194 0 0 .194 0 .433v2.6c0 .24.194.434.433.434zM.433 5.2c.24 0 .434-.194.434-.433v-.434c0-.239-.194-.433-.434-.433-.239 0-.433.194-.433.433v.434c0 .239.194.433.433.433z" transform="translate(6.895 2)"></path>
+                                </g>
+                                <path fill="#FFF" d="M18.645 5.467L21.405 8.258 18.645 8.145z"></path>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>
+                         Cancellation & change details<br>Learn more about the rules and fees</p><i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="toggle-menu"> 
+                      <ul> 
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="FAQ"> 
+                    <div class="header"> 
+                      <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                        <g fill="none" fill-rule="evenodd">
+                          <g>
+                            <g>
+                              <g>
+                                <g transform="translate(-60 -709) translate(50 534) translate(0 155) translate(10 20)">
+                                  <circle cx="17" cy="15" r="15" fill="#EAEFF6"></circle>
+                                  <path fill="#AFC1DE" stroke="#231F20" stroke-width=".812" d="M20.737 11.976c2.02 0 3.847.818 5.17 2.141s2.142 3.151 2.142 5.17c0 1.39-.388 2.689-1.061 3.795h0l1.324 3.712-4.196-1.021c-1.01.527-2.16.825-3.379.825-2.018 0-3.846-.818-5.17-2.141-1.322-1.323-2.14-3.151-2.14-5.17s.818-3.847 2.14-5.17c1.324-1.323 3.152-2.141 5.17-2.141z"></path>
+                                  <g fill="#FFF" fill-rule="nonzero">
+                                    <path d="M.544 0C.26 0-.013.25 0 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C1.074.25.85 0 .544 0zM2.544 0C2.26 0 1.987.25 2 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C3.074.25 2.85 0 2.544 0zM4.544 0C4.26 0 3.987.25 4 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C5.074.25 4.85 0 4.544 0z" transform="rotate(-1 1084.062 -1037.109)"></path>
+                                  </g>
+                                  <path fill="#AFC1DE" stroke="#231F20" stroke-width=".8" d="M10.196 1.4c-2.513 0-4.788 1.019-6.435 2.665C2.114 5.712 1.096 7.987 1.096 10.5c0 1.713.473 3.316 1.297 4.684h0L.734 19.83l5.288-1.24c1.25.646 2.67 1.011 4.174 1.011 2.513 0 4.788-1.019 6.435-2.665 1.646-1.647 2.665-3.922 2.665-6.435 0-2.513-1.019-4.788-2.665-6.435C14.984 2.42 12.709 1.4 10.196 1.4z"></path>
+                                  <g transform="matrix(-1 0 0 1 19.082 1.954)">
+                                    <mask id="2n91xy0d5b" fill="#fff">
+                                      <ellipse cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                    </mask>
+                                    <ellipse fill="#3665AC" cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                    <ellipse cx="9.783" cy="8.751" fill="#AFC1DE" mask="url(#2n91xy0d5b)" rx="8" ry="9.5"></ellipse>
+                                  </g>
+                                  <g fill="#FFF" fill-rule="nonzero">
+                                    <path d="M2.704 8.417c-.284 0-.557.25-.543.544.013.294.238.543.543.543.284 0 .557-.25.543-.543-.013-.295-.238-.544-.543-.544zM2.704 0C1.213 0 0 1.213 0 2.704c0 .3.243.543.543.543.3 0 .544-.243.544-.543 0-.892.725-1.617 1.617-1.617s1.617.725 1.617 1.617-.725 1.617-1.617 1.617c-.3 0-.543.243-.543.543v2.217c0 .3.243.544.543.544.3 0 .543-.244.543-.544V5.353C4.48 5.101 5.408 4.01 5.408 2.704 5.408 1.213 4.195 0 2.704 0z" transform="translate(7.106 5.529)"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </g>
+                      </svg>
+                      <p>
+                         Frequently asked questions <br>Find useful answers to common questions here</p><i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="toggle-menu"> 
+                      <ul> 
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                        <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="supmenu fare-detail-section">
+                  <div class="header"> 
+                    <h2>Fare Details </h2>
+                    <ul> 
+                      <li> <span class="desc">Fare </span><span class="info">AED 1,030</span></li>
+                      <li> <span class="desc">Taxes & fees </span><span class="info">AED 1,030</span></li>
+                      <li> <span class="desc">VAT </span><span class="info">AED 1,030</span></li>
+                    </ul>
+                  </div>
+                  <div class="footer"> <span class="total">Total (incl.VAT)</span><span class="price">AED 1,310</span></div>
+                </div>
+              </div>
+              <div class="menu-footer"> 
+                <button class="hide-details">Hide Details</button>
+                <button class="select-flight">Select flight AED 1,040   <i class="fas fa-chevron-right"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid"> 
+        <div class="row"> 
+          <div class="col-md-4">
+            <div class="call-us-section"><img src="img/airlines-3.png" alt=""><span>Call us at :</span><a class="contact-us" href="tel:0100-000-0000"><strong>0100-000-0000</strong></a></div>
+          </div>
+          <div class="col-md-4">
+            <div class="copyright">
+              <p>Copyright &copy; 2021 <i class="fa fa-value" aria-hidden="true">&nbsp;</i><a href="#">Matar. </a>All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="payment-section">
+              <ul class="list-item"> 
+                <li class="item"> <a href=""><img src="../../../../dist/img/visa.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="../../../../dist/img/discover.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="../../../../dist/img/paypal.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="../../../../dist/img/american.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="../../../../dist/img/mastercard.png" alt="alt"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
