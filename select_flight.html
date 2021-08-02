@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.png">
+    <title>Airport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+  </head>
+  <body> 
+    <div id="preloader">
+      <div data-loader="dual-ring"></div>
+    </div><span id="scrollTop"> <i class="fas fa-chevron-up"></i></span>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+           LOGO</div>
+        <ul class="list-item"> 
+          <li class="item"><a class="contact-us" href="tel:0100-000-0000"><strong>0100-000-0000</strong></a></li>
+          <li class="item">Arabic<i class="fa fa-chevron-down sm-p xs-hide"></i>
+            <ul class="dropdown-menu">
+              <li><a href="">Arabic</a></li>
+              <li> <a href="">English</a></li>
+            </ul>
+          </li>
+          <li class="item">Retrieve my booking</li>
+          <li class="item">
+             Currency<i class="fa fa-chevron-down sm-p xs-hide"></i>
+            <ul class="dropdown-menu">
+              <li><a href="">EGP</a></li>
+              <li> <a href="">SR</a></li>
+            </ul>
+          </li>
+          <li class="item signIn-btn">
+            <button>Sign in</button>
+          </li>
+        </ul>
+        <button class="humburger-btn"> 
+          <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-navbar"> 
+        <div class="header"> 
+          <button class="back-btn"><i class="fas fa-arrow-left"></i></button>
+          <div class="flight-info"> 
+            <div class="from-to">
+              <div class="fly-from"> Cairo -</div>
+              <div class="fly-to"> Dubai</div>
+            </div>
+            <div class="fly-details"> 
+              <div class="date">18 Aug </div><span class="space">| </span>
+              <div class="passengersCount-kind">
+                <div class="passengers-count"><i class="fas fa-user"></i><span>1 </span></div><span class="dash">-</span>
+                <div class="flight-kind">
+                   Business</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edit-section"> 
+          <button class="edite-search">
+            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+            </svg>
+          </button>
+          <button class="price-kind"> 
+            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-search-box"> 
+        <div class="navigate-system">
+          <ul> 
+            <li class="mobile-nav-item active">One-Way</li>
+            <li class="mobile-nav-item round-trip">Round Trip</li><span class="line"></span>
+          </ul>
+        </div>
+        <section class="content"> 
+          <div class="travel-from-to"> 
+            <div class="travel-from">
+              <div class="icon">  <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M24.987 5.3135C24.581 4.4045 22.3695 3.328 19.644 4.5425C19.644 4.5425 5.938 10.656 5.519 10.843C5.1005 11.031 4.7995 10.822 4.409 10.533C3.7295 10.033 2.7435 9.304 2.4355 9.0655C1.948 8.6925 0.723003 8.9315 1.057 9.6805C1.39 10.429 2.4305 12.7605 2.824 13.6435C3.403 14.9395 6.425 14.643 11.6835 12.2985C12.162 12.085 12.6785 11.855 13.2195 11.6135L11.8905 18.6875C11.7195 19.375 11.8855 19.564 12.1125 19.464L12.8925 19.1155C13.296 18.9355 13.8515 18.296 14.132 17.687L17.9285 9.4725C21.758 7.684 25.245 5.893 24.987 5.3135Z" stroke="#95A1A7" stroke-width="1.1"/>
+<path d="M14.3455 6.9005L8.5285 5.122C7.8875 4.925 7.041 4.91 6.637 5.09L5.856 5.4385C5.63 5.539 5.659 5.789 6.286 6.1225L10.453 8.647" stroke="#95A1A7" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+              <div class="input-group"> 
+                <label for="#label1">from </label>
+                <div class="border-div" id="label1"> 
+                  <input class="input-text" type="text" value="Cairo" disabled>
+                </div>
+              </div>
+              <div class="toggle-list"> 
+                <div class="header"> 
+                  <div class="icon"> <i class="close-btn fas fa-arrow-left"></i><span>Search origin</span></div>
+                  <div class="input-group"> 
+                    <div class="input-group-text" id="basic-addon7"><i class="fas fa-search"></i></div>
+                    <input class="form-control" type="text" aria-describedby="basic-addon7" placeholder="Where are you flying from ?">
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="select-box"> 
+                    <div class="option"> 
+                      <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<g>
+<g>
+<path d="M0 0H24V24H0z" transform="translate(-12 -204) translate(12 204)"/>
+<path fill="#98A1A7" d="M12.012 1C7.077 1 3.023 4.81 3 9.5c.023 1.762.58 3.48 1.668 4.933.023.044.046.088.093.132l6.347 8.016.023.022c.232.265.556.397.88.397.325 0 .65-.154.881-.397l.023-.022 6.324-8.016c.07-.066.116-.11.162-.198C20.444 12.936 21 11.24 21 9.5 21 4.832 16.969 1 12.012 1zm0 1.321c4.193 0 7.598 3.237 7.598 7.201 0 1.476-.463 2.885-1.367 4.119-.023.022-.046.043-.046.065l-6.185 7.84L5.85 13.73l-.024-.023c0-.022-.023-.021-.046-.043-.904-1.234-1.39-2.665-1.39-4.14.023-3.987 3.452-7.202 7.622-7.202zm0 2.885c-2.41 0-4.379 1.806-4.379 4.03 0 2.225 1.97 4.052 4.379 4.052s4.378-1.806 4.378-4.03-1.97-4.052-4.378-4.052zm0 1.321C13.656 6.527 15 7.74 15 9.237c0 1.497-1.344 2.73-2.988 2.73-1.645 0-2.989-1.211-2.989-2.709 0-1.497 1.344-2.73 2.989-2.73z" transform="translate(-12 -204) translate(12 204)"/>
+</g>
+</g>
+</g>
+</svg>
+                      </div>
+                      <div class="airport-info"> 
+                        <div class="name-location-container"> 
+                          <label for="Cairo">Cairo ,Egypt </label>
+                          <input class="name" id="Cairo" type="radio" value="Cairo, Egypt">
+                          <div class="location"> Cairo</div>
+                        </div>
+                        <div class="airport-abbreviation"><span>CAI</span></div>
+                      </div>
+                    </div>
+                    <div class="option"> 
+                      <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<g>
+<g>
+<path d="M0 0H24V24H0z" transform="translate(-12 -204) translate(12 204)"/>
+<path fill="#98A1A7" d="M12.012 1C7.077 1 3.023 4.81 3 9.5c.023 1.762.58 3.48 1.668 4.933.023.044.046.088.093.132l6.347 8.016.023.022c.232.265.556.397.88.397.325 0 .65-.154.881-.397l.023-.022 6.324-8.016c.07-.066.116-.11.162-.198C20.444 12.936 21 11.24 21 9.5 21 4.832 16.969 1 12.012 1zm0 1.321c4.193 0 7.598 3.237 7.598 7.201 0 1.476-.463 2.885-1.367 4.119-.023.022-.046.043-.046.065l-6.185 7.84L5.85 13.73l-.024-.023c0-.022-.023-.021-.046-.043-.904-1.234-1.39-2.665-1.39-4.14.023-3.987 3.452-7.202 7.622-7.202zm0 2.885c-2.41 0-4.379 1.806-4.379 4.03 0 2.225 1.97 4.052 4.379 4.052s4.378-1.806 4.378-4.03-1.97-4.052-4.378-4.052zm0 1.321C13.656 6.527 15 7.74 15 9.237c0 1.497-1.344 2.73-2.988 2.73-1.645 0-2.989-1.211-2.989-2.709 0-1.497 1.344-2.73 2.989-2.73z" transform="translate(-12 -204) translate(12 204)"/>
+</g>
+</g>
+</g>
+</svg>
+                      </div>
+                      <div class="airport-info"> 
+                        <div class="name-location-container"> 
+                          <label for="United">United ,Arab</label>
+                          <input class="name" id="United" type="radio" value="United, Egypt">
+                          <div class="location"> Cairo</div>
+                        </div>
+                        <div class="airport-abbreviation"><span>CAI</span></div>
+                      </div>
+                    </div>
+                    <div class="option"> 
+                      <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<g>
+<g>
+<path d="M0 0H24V24H0z" transform="translate(-12 -204) translate(12 204)"/>
+<path fill="#98A1A7" d="M12.012 1C7.077 1 3.023 4.81 3 9.5c.023 1.762.58 3.48 1.668 4.933.023.044.046.088.093.132l6.347 8.016.023.022c.232.265.556.397.88.397.325 0 .65-.154.881-.397l.023-.022 6.324-8.016c.07-.066.116-.11.162-.198C20.444 12.936 21 11.24 21 9.5 21 4.832 16.969 1 12.012 1zm0 1.321c4.193 0 7.598 3.237 7.598 7.201 0 1.476-.463 2.885-1.367 4.119-.023.022-.046.043-.046.065l-6.185 7.84L5.85 13.73l-.024-.023c0-.022-.023-.021-.046-.043-.904-1.234-1.39-2.665-1.39-4.14.023-3.987 3.452-7.202 7.622-7.202zm0 2.885c-2.41 0-4.379 1.806-4.379 4.03 0 2.225 1.97 4.052 4.379 4.052s4.378-1.806 4.378-4.03-1.97-4.052-4.378-4.052zm0 1.321C13.656 6.527 15 7.74 15 9.237c0 1.497-1.344 2.73-2.988 2.73-1.645 0-2.989-1.211-2.989-2.709 0-1.497 1.344-2.73 2.989-2.73z" transform="translate(-12 -204) translate(12 204)"/>
+</g>
+</g>
+</g>
+</svg>
+                      </div>
+                      <div class="airport-info"> 
+                        <div class="name-location-container"> 
+                          <label for="Suadia">Suadia ,Arabia</label>
+                          <input class="name" id="Suadia" type="radio" value="Suadia ,Arabia">
+                          <div class="location"> Cairo</div>
+                        </div>
+                        <div class="airport-abbreviation"><span>CAI</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="horizental-line"></div>
+            <div class="travel-to">
+              <div class="icon">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.2175 17.8125C23.5906 16.8567 22.7794 14.4559 19.9167 13.3375C19.9167 13.3375 5.51636 7.7143 5.07495 7.54238C4.63493 7.37093 4.56988 7.00014 4.49878 6.50436C4.37379 5.6443 4.19444 4.39394 4.14658 3.99574C4.06759 3.36846 3.00541 2.64408 2.69782 3.43073C2.39022 4.21644 1.43398 6.66652 1.07155 7.59349C0.539997 8.9563 2.94547 10.9571 8.47012 13.1154C8.97287 13.3114 9.51418 13.5233 10.0838 13.7454L3.93563 17.8905C3.3079 18.2632 3.28977 18.522 3.52767 18.6158L4.34777 18.9351C4.77153 19.1005 5.64321 19.0452 6.29186 18.8096L15.0611 15.6472C19.144 17.161 22.981 18.4207 23.2175 17.8125Z" stroke="#95A1A7" stroke-width="1.1"/>
+<path d="M14.3535 11.1592L11.448 5.60806C11.1284 4.99566 10.5271 4.3642 10.1024 4.19786L9.28232 3.87818C9.04489 3.78525 8.88273 3.98784 9.09228 4.68853L10.2576 9.57057" stroke="#95A1A7" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+              </div>
+              <div class="input-group"> 
+                <label for="#label2">To</label>
+                <div class="border-div" id="label2"> 
+                  <input class="input-text" type="text" value="Saudia" disabled>
+                </div>
+              </div>
+              <div class="toggle-list"> 
+                <div class="header"> 
+                  <div class="icon"> <i class="close-btn fas fa-arrow-left"></i><span>Search origin</span></div>
+                  <div class="input-group"> 
+                    <div class="input-group-text" id="basic-addon7"><i class="fas fa-search"></i></div>
+                    <input class="form-control" type="text" aria-describedby="basic-addon7" placeholder="Where are you flying to ?">
+                  </div>
+                </div>
+                <div class="content">
+                  <div class="select-box"> 
+                    <div class="option"> 
+                      <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<g>
+<g>
+<path d="M0 0H24V24H0z" transform="translate(-12 -204) translate(12 204)"/>
+<path fill="#98A1A7" d="M12.012 1C7.077 1 3.023 4.81 3 9.5c.023 1.762.58 3.48 1.668 4.933.023.044.046.088.093.132l6.347 8.016.023.022c.232.265.556.397.88.397.325 0 .65-.154.881-.397l.023-.022 6.324-8.016c.07-.066.116-.11.162-.198C20.444 12.936 21 11.24 21 9.5 21 4.832 16.969 1 12.012 1zm0 1.321c4.193 0 7.598 3.237 7.598 7.201 0 1.476-.463 2.885-1.367 4.119-.023.022-.046.043-.046.065l-6.185 7.84L5.85 13.73l-.024-.023c0-.022-.023-.021-.046-.043-.904-1.234-1.39-2.665-1.39-4.14.023-3.987 3.452-7.202 7.622-7.202zm0 2.885c-2.41 0-4.379 1.806-4.379 4.03 0 2.225 1.97 4.052 4.379 4.052s4.378-1.806 4.378-4.03-1.97-4.052-4.378-4.052zm0 1.321C13.656 6.527 15 7.74 15 9.237c0 1.497-1.344 2.73-2.988 2.73-1.645 0-2.989-1.211-2.989-2.709 0-1.497 1.344-2.73 2.989-2.73z" transform="translate(-12 -204) translate(12 204)"/>
+</g>
+</g>
+</g>
+</svg>
+                      </div>
+                      <div class="airport-info"> 
+                        <div class="name-location-container"> 
+                          <label for="Cairo">Cairo ,Egypt </label>
+                          <input class="name" id="Cairo" type="radio" value="Cairo, Egypt">
+                          <div class="location"> Cairo</div>
+                        </div>
+                        <div class="airport-abbreviation"><span>CAI</span></div>
+                      </div>
+                    </div>
+                    <div class="option"> 
+                      <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<g>
+<g>
+<path d="M0 0H24V24H0z" transform="translate(-12 -204) translate(12 204)"/>
+<path fill="#98A1A7" d="M12.012 1C7.077 1 3.023 4.81 3 9.5c.023 1.762.58 3.48 1.668 4.933.023.044.046.088.093.132l6.347 8.016.023.022c.232.265.556.397.88.397.325 0 .65-.154.881-.397l.023-.022 6.324-8.016c.07-.066.116-.11.162-.198C20.444 12.936 21 11.24 21 9.5 21 4.832 16.969 1 12.012 1zm0 1.321c4.193 0 7.598 3.237 7.598 7.201 0 1.476-.463 2.885-1.367 4.119-.023.022-.046.043-.046.065l-6.185 7.84L5.85 13.73l-.024-.023c0-.022-.023-.021-.046-.043-.904-1.234-1.39-2.665-1.39-4.14.023-3.987 3.452-7.202 7.622-7.202zm0 2.885c-2.41 0-4.379 1.806-4.379 4.03 0 2.225 1.97 4.052 4.379 4.052s4.378-1.806 4.378-4.03-1.97-4.052-4.378-4.052zm0 1.321C13.656 6.527 15 7.74 15 9.237c0 1.497-1.344 2.73-2.988 2.73-1.645 0-2.989-1.211-2.989-2.709 0-1.497 1.344-2.73 2.989-2.73z" transform="translate(-12 -204) translate(12 204)"/>
+</g>
+</g>
+</g>
+</svg>
+                      </div>
+                      <div class="airport-info"> 
+                        <div class="name-location-container"> 
+                          <label for="United">United ,Arab</label>
+                          <input class="name" id="United" type="radio" value="United, Egypt">
+                          <div class="location"> Cairo</div>
+                        </div>
+                        <div class="airport-abbreviation"><span>CAI</span></div>
+                      </div>
+                    </div>
+                    <div class="option"> 
+                      <div class="icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<g>
+<g>
+<path d="M0 0H24V24H0z" transform="translate(-12 -204) translate(12 204)"/>
+<path fill="#98A1A7" d="M12.012 1C7.077 1 3.023 4.81 3 9.5c.023 1.762.58 3.48 1.668 4.933.023.044.046.088.093.132l6.347 8.016.023.022c.232.265.556.397.88.397.325 0 .65-.154.881-.397l.023-.022 6.324-8.016c.07-.066.116-.11.162-.198C20.444 12.936 21 11.24 21 9.5 21 4.832 16.969 1 12.012 1zm0 1.321c4.193 0 7.598 3.237 7.598 7.201 0 1.476-.463 2.885-1.367 4.119-.023.022-.046.043-.046.065l-6.185 7.84L5.85 13.73l-.024-.023c0-.022-.023-.021-.046-.043-.904-1.234-1.39-2.665-1.39-4.14.023-3.987 3.452-7.202 7.622-7.202zm0 2.885c-2.41 0-4.379 1.806-4.379 4.03 0 2.225 1.97 4.052 4.379 4.052s4.378-1.806 4.378-4.03-1.97-4.052-4.378-4.052zm0 1.321C13.656 6.527 15 7.74 15 9.237c0 1.497-1.344 2.73-2.988 2.73-1.645 0-2.989-1.211-2.989-2.709 0-1.497 1.344-2.73 2.989-2.73z" transform="translate(-12 -204) translate(12 204)"/>
+</g>
+</g>
+</g>
+</svg>
+                      </div>
+                      <div class="airport-info"> 
+                        <div class="name-location-container"> 
+                          <label for="Suadia">Suadia ,Arabia</label>
+                          <input class="name" id="Suadia" type="radio" value="Suadia ,Arabia">
+                          <div class="location"> Cairo</div>
+                        </div>
+                        <div class="airport-abbreviation"><span>CAI</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="deprature-date">
+            <div class="icon"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.65217 2.22609H2.45652V3.42609H5.65217V2.22609ZM2.45652 2.22609C2.2669 2.22609 2.01389 2.26111 1.79139 2.41594C1.53553 2.59399 1.4 2.87502 1.4 3.18765H2.6C2.6 3.20143 2.59689 3.2405 2.5723 3.28951C2.54711 3.33971 2.51095 3.37717 2.47681 3.40093C2.44556 3.42267 2.42328 3.42813 2.42224 3.42838C2.42104 3.42868 2.43172 3.42609 2.45652 3.42609V2.22609ZM1.4 3.18765V21.5627H2.6V3.18765H1.4ZM1.4 21.5627C1.4 21.8226 1.48492 22.0891 1.68178 22.2947C1.88088 22.5027 2.14868 22.6 2.41863 22.6V21.4C2.43749 21.4 2.49598 21.4099 2.54853 21.4648C2.59886 21.5174 2.6 21.5652 2.6 21.5627H1.4ZM2.41863 22.6H21.6688V21.4H2.41863V22.6ZM21.6688 22.6C21.9388 22.6 22.2065 22.5025 22.4054 22.2945C22.6021 22.089 22.687 21.8226 22.687 21.5627H21.487C21.487 21.5652 21.4881 21.5175 21.5383 21.465C21.5908 21.4101 21.6494 21.4 21.6688 21.4V22.6ZM22.687 21.5627V3.18765H21.487V21.5627H22.687ZM22.687 3.18765C22.687 2.87502 22.5514 2.59399 22.2956 2.41594C22.0731 2.26111 21.8201 2.22609 21.6304 2.22609V3.42609C21.6552 3.42609 21.6659 3.42868 21.6647 3.42838C21.6637 3.42813 21.6414 3.42267 21.6101 3.40093C21.576 3.37717 21.5398 3.33971 21.5147 3.28951C21.4901 3.2405 21.487 3.20143 21.487 3.18765H22.687ZM21.6304 2.22609H18.4348V3.42609H21.6304V2.22609ZM16.6849 2.22609H7.47826V3.42609H16.6849V2.22609ZM2 7.53478H22.087V6.33478H2V7.53478Z" fill="#95A1A7"/>
+<path d="M17.9782 4.05217H17.0652V5.25217H17.9782V4.05217ZM17.0652 4.05217C17.1446 4.05217 17.2087 4.11628 17.2087 4.19565H16.0087C16.0087 4.77902 16.4818 5.25217 17.0652 5.25217V4.05217ZM17.2087 4.19565V1.45652H16.0087V4.19565H17.2087ZM17.2087 1.45652C17.2087 1.53589 17.1446 1.6 17.0652 1.6V0.4C16.4818 0.4 16.0087 0.873151 16.0087 1.45652H17.2087ZM17.0652 1.6H17.9782V0.4H17.0652V1.6ZM17.9782 1.6C17.8989 1.6 17.8348 1.53589 17.8348 1.45652H19.0348C19.0348 0.873151 18.5616 0.4 17.9782 0.4V1.6ZM17.8348 1.45652V4.19565H19.0348V1.45652H17.8348ZM17.8348 4.19565C17.8348 4.11628 17.8989 4.05217 17.9782 4.05217V5.25217C18.5616 5.25217 19.0348 4.77902 19.0348 4.19565H17.8348ZM7.02173 4.05217H6.10868V5.25217H7.02173V4.05217ZM6.10868 4.05217C6.18805 4.05217 6.25216 4.11628 6.25216 4.19565H5.05216C5.05216 4.77902 5.52531 5.25217 6.10868 5.25217V4.05217ZM6.25216 4.19565V1.45652H5.05216V4.19565H6.25216ZM6.25216 1.45652C6.25216 1.53589 6.18805 1.6 6.10868 1.6V0.4C5.52531 0.4 5.05216 0.873151 5.05216 1.45652H6.25216ZM6.10868 1.6H7.02173V0.4H6.10868V1.6ZM7.02173 1.6C6.94236 1.6 6.87825 1.53589 6.87825 1.45652H8.07825C8.07825 0.873151 7.6051 0.4 7.02173 0.4V1.6ZM6.87825 1.45652V4.19565H8.07825V1.45652H6.87825ZM6.87825 4.19565C6.87825 4.11628 6.94236 4.05217 7.02173 4.05217V5.25217C7.6051 5.25217 8.07825 4.77902 8.07825 4.19565H6.87825Z" fill="#95A1A7"/>
+</svg>
+            </div>
+            <div class="input-group"> 
+              <label for="#label3">Departure Date</label>
+              <div class="border-div" id="label3"> 
+                <input class="input-date" type="date">
+              </div>
+              <div class="round-trip">
+                <label for="#label4">Return Date</label>
+                <div class="border-div" id="label4"> 
+                  <input class="input-date" type="date">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pssengers-count"> 
+            <div class="icon"> <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.3972 0.5C13.7162 0.5 12.3347 1.88146 12.3347 3.5625C12.3347 5.24354 13.7162 6.625 15.3972 6.625C17.0783 6.625 18.4597 5.24354 18.4597 3.5625C18.4597 1.88104 17.0777 0.5 15.3972 0.5ZM15.3972 2.25C16.1317 2.25 16.7097 2.82721 16.7097 3.5625C16.7097 4.29821 16.1329 4.875 15.3972 4.875C14.6615 4.875 14.0847 4.29821 14.0847 3.5625C14.0847 2.82679 14.6615 2.25 15.3972 2.25ZM12.1912 6.85742C11.7389 6.89181 11.3092 7.10153 11.0034 7.45044L9.1748 9.54053L7.31372 13.1277L4.20508 11.5007L0.5 18.4939L5.06812 20.8865C5.30803 21.2678 5.72674 21.4994 6.17725 21.5C6.88809 21.4972 7.46749 20.9289 7.48416 20.2183C7.50083 19.5076 6.9487 18.9129 6.23877 18.8767L8.58008 14.4556L8.59204 14.4624L10.6309 10.5334L12.3193 8.604L12.321 8.60229L13.0166 8.7356L11.9878 13.4285C11.881 13.9158 11.9886 14.4265 12.2817 14.8298L17.1182 21.5H19.28L13.6985 13.8027L14.7358 9.06201L15.1443 9.14062L15.8108 11.4443C15.9637 11.9736 16.3589 12.3996 16.8704 12.5945L19.9602 13.7617L20.5789 12.1245L17.4924 10.959V10.9573L16.8242 8.65356C16.6415 8.02548 16.1194 7.5444 15.4724 7.42139H15.4707L12.6475 6.88306C12.4956 6.85434 12.3419 6.84596 12.1912 6.85742ZM4.93652 13.8591L6.48657 14.6726L4.42041 18.5708L2.86865 17.759L4.93652 13.8591ZM11.8716 16.2893L11.446 17.9812L8.8894 21.5H11.053L13.061 18.7349L13.1909 18.2068L11.8716 16.2893Z" fill="#98A1A7" stroke="white" stroke-width="0.4"/>
+</svg>
+            </div>
+            <div class="input-group"> 
+              <label for="#label5">Passengers </label>
+              <div class="border-div" id="label5"> 
+                <input class="input-text" type="text" value="1 Adult" disabled>
+              </div>
+            </div>
+            <div class="blur-bg">
+              <div class="toggle-list"> 
+                <div class="header"> 
+                  <div class="icon"> <i class="close-btn fas fa-times"></i>Passenger </div>
+                  <div class="save_btn"> 
+                    <button>Save</button>
+                  </div>
+                </div>
+                <div class="content"> 
+                  <ul> 
+                    <li class="adult">
+                      <div class="count-kind-age"> 
+                        <div class="kind">Adults </div>
+                        <div class="age">Age (12+)</div>
+                      </div>
+                      <div class="counter"> 
+                        <button class="decrease disabled">-</button>
+                        <input type="text" value="1" disabled>
+                        <button class="increase">+</button>
+                      </div>
+                    </li>
+                    <li class="children">
+                      <div class="count-kind-age"> 
+                        <div class="kind">Children </div>
+                        <div class="age">Age (2-12)</div>
+                      </div>
+                      <div class="counter"> 
+                        <button class="decrease disabled">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="increase">+</button>
+                      </div>
+                    </li>
+                    <li class="infants">
+                      <div class="count-kind-age"> 
+                        <div class="kind">Infants </div>
+                        <div class="age">Age (0-2)</div>
+                      </div>
+                      <div class="counter"> 
+                        <button class="decrease disabled">-</button>
+                        <input type="text" value="0" disabled>
+                        <button class="increase">+</button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cabin-class"> 
+            <div class="icon"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.83334 11.5V2.83333C6.83334 2.09667 7.43001 1.5 8.16668 1.5H16.1667C16.9033 1.5 17.5 2.09667 17.5 2.83333V11.5" stroke="#95A1A7" stroke-width="1.15" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.8333 12.1667V15.5H7.5V12.1667H5.5V18.1667C5.5 18.5347 5.79867 18.8333 6.16667 18.8333H18.1667C18.5347 18.8333 18.8333 18.5347 18.8333 18.1667V12.1667H16.8333Z" stroke="#95A1A7" stroke-width="1.15" stroke-linejoin="round"/>
+<path d="M16.8333 20.1667C16.8333 20.842 17.5 22.8333 17.5 22.8333H6.83334C6.83334 22.8333 7.50001 20.8393 7.50001 20.1667" stroke="#95A1A7" stroke-width="1.15" stroke-linejoin="round"/>
+</svg>
+            </div>
+            <div class="input-group"> 
+              <label for="#label6">Cabin class</label>
+              <div class="border-div" id="label6"> 
+                <input class="input-text" type="text" value="Business" disabled>
+              </div>
+              <div class="blur-bg">
+                <div class="toggle-list"> 
+                  <div class="header"> 
+                    <div class="icon"> <i class="close-btn fas fa-times"></i><span>Capin class </span></div>
+                  </div>
+                  <div class="content"> 
+                    <ul> 
+                      <li>
+                        <label for="Economy">Economy</label>
+                        <input id="Economy" type="radio" value="Economy">
+                      </li>
+                      <li>
+                        <label for="PremiumEconomy">Premium Economy</label>
+                        <input id="PremiumEconomy" type="radio" value="Premium Economy">
+                      </li>
+                      <li class="selected">
+                        <label for="Business">Business</label>
+                        <input id="Business" type="radio" value="Business">
+                      </li>
+                      <li>
+                        <label for="First">First</label>
+                        <input id="First" type="radio" value="First">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="search-flight">
+             Search Flights</button>
+        </section>
+      </div>
+      <div class="mopile-sidbar">
+        <div class="content">
+          <button class="close-sidebar-btn"> <i class="fas fa-arrow-circle-right"></i></button>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <div class="icon"><i class="fas fa-user-circle"></i></div><span>Profile</span>
+            </li>
+            <li class="nav-item">
+              <div class="icon"> <i class="fas fa-ticket-alt"></i></div><span>Booking</span>
+            </li>
+            <li class="nav-item active">
+              <div class="icon"> <i class="fas fa-plane"></i></div><span>Flights</span>
+            </li>
+            <li class="nav-item"> 
+              <div class="icon"> <i class="fas fa-bed"></i></div><span>Hotels</span>
+            </li>
+            <li class="nav-item">
+              <div class="icon"> <i class="fas fa-tag"> </i></div><span>Offers</span>
+            </li>
+            <li class="nav-item">
+              <div class="icon">
+                 Change language</div><a href="">عربي </a>
+            </li>
+            <li class="nav-item"><span>Country</span>
+              <div class="icon"> <i class="fas fa-globe-americas"></i></div>
+            </li>
+            <li class="nav-item"> <span>Display currency </span><span class="kind">AED</span></li>
+            <li class="nav-item"> <span>FAQ</span></li>
+            <li class="nav-item"> <span>Privacy Policy</span></li>
+            <li class="nav-item"> <span>Terms & Conditions</span></li>
+            <li class="nav-item"> <span>About Us</span></li>
+          </ul>
+        </div>
+        <div class="toggle-list-select-country">
+          <div class="header"> 
+            <div class="icon"> <i class="close-btn fas fa-times"> </i>Country</div>
+          </div>
+          <div class="info"> 
+            <p> <span>Select your country </span>We need this information so that we can charge you in currency of the country you are based in and display the best rates accordingly.</p>
+          </div>
+          <div class="content"> 
+            <ul> 
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault1"> 
+                  <div class="icon"> <img src="./img/kuwait.png" alt=""></div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+              </li>
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault2"> 
+                  <div class="icon"> <img src="./img/kuwait.png" alt=""></div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault2">
+              </li>
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault3"> 
+                  <div class="icon"> <img src="./img/kuwait.png" alt=""></div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault3">
+              </li>
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault4"> 
+                  <div class="icon"> <img src="./img/kuwait.png" alt=""></div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault4">
+              </li>
+              <li class="form-check international"> 
+                <label class="form-check-label" for="flexRadioDefault5"> 
+                  <div class="icon"> <i class="fas fa-globe-americas"></i></div>
+                  <div class="desc"> <span>International</span>Default currency will be AED</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault5" checked="checked">
+              </li>
+            </ul>
+            <button class="save-btn">Save </button>
+          </div>
+        </div>
+        <div class="toggle-list-display-currency"> 
+          <div class="header"> 
+            <div class="icon"> <i class="close-btn fas fa-times"> </i>Country</div>
+          </div>
+          <div class="info"> 
+            <p> <span>Select your country </span>We need this information so that we can charge you in currency of the country you are based in and display the best rates accordingly.</p>
+          </div>
+          <div class="content"> 
+            <ul> 
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault1"> 
+                  <div class="icon">
+                     AED</div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault1">
+              </li>
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault2"> 
+                  <div class="icon">
+                     AED</div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault2">
+              </li>
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault3"> 
+                  <div class="icon">
+                     AED</div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault3">
+              </li>
+              <li class="form-check"> 
+                <label class="form-check-label" for="flexRadioDefault4"> 
+                  <div class="icon">
+                     AED</div>
+                  <div class="desc">
+                     Kuwait</div>
+                </label>
+                <input class="form-check-label" type="radio" value="" name="flexRadioDefault" id="flexRadioDefault4">
+              </li>
+            </ul>
+            <button class="save-btn">Save </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="RetrieveMyBooking-suppage"> 
+      <div class="con-btn">
+        <button class="close-btn">X Close</button>
+        <div class="content">
+          <h2>Retrieve your booking</h2>
+          <form action="submit"> 
+            <label for="input-email">Enter your email address </label>
+            <input type="email" id="input-email" autocomplete="email">
+            <p>The email address you used when you made your booking.</p>
+            <label for="input-text">Enter your Logo ID</label>
+            <input type="text" id="input-text">
+            <p>Your logo ID is the booking ID that was sent to your email address after you placed your booking.</p>
+            <button type="submit">Continue</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="sign-in" id="sign-in"> 
+      <div class="toggle-menu"> 
+        <div class="header"><a href="#">View full screen </a><i class="fas fa-times"></i></div>
+        <div class="info"> 
+          <h2>Sign in to your account!</h2>
+          <p>Get access to exclusive deals, save travellers’ details for quicker bookings and manage your upcoming bookings with ease!</p>
+        </div>
+        <div class="box"> 
+          <h2>Sign in using your:</h2><a class="facebook" href="https://www.facebook.com/login/reauth.php?app_id=133098687052106&amp;signed_next=1&amp;next=https%3A%2F%2Fwww.facebook.com%2Fv2.8%2Fdialog%2Foauth%3Fclient_id%3D133098687052106%26redirect_uri%3Dhttps%253A%252F%252FAli Abdelbaky%252Fauth%252Fsocial%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D864844b1-2aec-4afb-9b09-1d98f4a28000%26tp%3Dunspecified&amp;cancel_url=https%3A%2F%2FAli Abdelbaky%2Fauth%2Fsocial%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&amp;display=page&amp;locale=ar_AR&amp;pl_dbl=0">Facebook </a>
+          <div class="or"> 
+            <hr><span>OR</span>
+          </div>
+          <ul class="options">
+            <li class="active"> <i class="fas fa-envelope"></i>Email adress</li>
+            <li> <i class="fas fa-mobile-alt"></i>Mobile number</li>
+            <hr>
+          </ul>
+          <form action="submit" autocomplete="on">
+            <div class="email-addres active">
+              <label for="#email-input2">Email</label>
+              <input class="form-control" type="email" id="#email-input2" required="" autocomplete="on">
+            </div>
+            <div class="mobile-number">
+              <label for="#phone">Phone</label>
+              <input id="phone" name="phone" type="tel">
+            </div>
+            <label for="#pass-input2">Password</label>
+            <input class="form-control" type="password" id="#pass-input2" required="" autocomplete="on">
+            <button type="submit">Sign In</button>
+          </form><a class="forgot-password" href="">Forgot your password?</a>
+          <div class="dont-haveAccount text-center"><span>Don’t have an account?</span><a href="">Create an account</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="select-flight-page"> 
+      <div class="container-fluid">
+        <div class="content"> 
+          <div class="three-steps-valdiation">
+            <div class="step"> <span class="step_number check">
+                 ✓</span><span class="title">
+                 Choose your fligh</span><span class="line"></span></div>
+            <div class="step"> <span class="step_number">
+                 2</span><span class="title">
+                 Enter your details</span><span class="line"></span></div>
+            <div class="step"> <span class="step_number">
+                 3</span><span class="title">
+                 Final details</span></div>
+          </div>
+          <div class="form-feild"> 
+            <div class="form-feild-container">
+              <section class="form-content"> 
+                <div class="header">
+                  <h2>Already a tajawal member?</h2>
+                  <div class="sign-in-option">
+                    <button id="selectflight-sign-in-btn">Sign in </button>now and speed up your booking!
+                  </div>
+                </div>
+                <div class="content"> 
+                  <h2 class="header">
+                     Enter traveller details</h2>
+                  <div class="warning"> 
+                    <svg class="sc-fpdzYq ctDWUv sc-hMqMXs czyPuR" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 26 29" preserveAspectRatio="xMidYMid meet" size="29" width="29" height="29">
+                      <rect class="fill" width="23.881" height="28.889" rx="1.8"></rect>
+                      <path class="fill" d="M23.36 8.393a.564.564 0 0 0 .564-.564V1.693C23.924.759 23.164 0 22.23 0H1.693C.759 0 0 .76 0 1.693v25.503c0 .934.76 1.693 1.693 1.693H22.23c.933 0 1.693-.76 1.693-1.693V23.04a.564.564 0 0 0-1.129 0v4.157a.565.565 0 0 1-.564.564H1.693a.565.565 0 0 1-.565-.564V1.693c0-.311.254-.565.565-.565H22.23c.311 0 .564.254.564.565v6.136c0 .311.253.564.564.564z"></path>
+                      <path fill="#FFF" d="M13.96 22H3.72c-.398 0-.721.253-.721.564 0 .312.323.564.721.564h10.24c.398 0 .72-.252.72-.564 0-.311-.322-.564-.72-.564zm-2.503-3h-7.9a.56.56 0 0 0-.557.564c0 .312.25.564.556.564h7.9a.56.56 0 0 0 .557-.564.56.56 0 0 0-.556-.564zm2.503-3H3.72c-.398 0-.721.253-.721.564 0 .312.323.564.721.564h10.24c.398 0 .72-.252.72-.564 0-.311-.322-.564-.72-.564zm1.403-7H3.813C3.364 9 3 9.253 3 9.564c0 .312.364.564.813.564h11.55c.449 0 .813-.252.813-.564 0-.311-.364-.564-.813-.564zm-1.403 3H3.72c-.398 0-.721.253-.721.564 0 .312.323.564.721.564h10.24c.398 0 .72-.252.72-.564 0-.311-.322-.564-.72-.564zm3.012-6H3.919C3.412 6 3 6.253 3 6.564c0 .312.412.564.92.564h13.052c.507 0 .92-.252.92-.564 0-.311-.413-.564-.92-.564z"></path>
+                      <path class="stroke" fill="#FFF" stroke-width=".6" d="M23.91 5.113a3.074 3.074 0 0 1 1.124 4.194l-8.302 14.38a.959.959 0 0 1-.262.293l-4.241 3.123a.959.959 0 0 1-1.523-.879l.584-5.234a.961.961 0 0 1 .123-.374l8.302-14.38a3.053 3.053 0 0 1 1.865-1.43 3.053 3.053 0 0 1 2.33.307zM12.857 24.257l1.293-.952-1.115-.644-.178 1.596zm2.692-2.36l6.363-11.02-1.995-1.152-6.362 11.02 1.994 1.151zm5.328-13.834l1.994 1.151.5-.866c.155-.267.195-.576.116-.874a1.142 1.142 0 0 0-.537-.7 1.142 1.142 0 0 0-.874-.114c-.297.08-.545.27-.699.536l-.5.867z"></path>
+                    </svg>
+                    <div class="disc">
+                       Enter your details as they appear on your passport. Use English only.</div>
+                  </div>
+                  <div class="card_body"> <span class="preview_name"> <span class="default-text">Adult 1</span><span class="first-name"> </span><span class="middle-name"> </span><span class="last-name"></span></span>
+                    <div class="client-name"> 
+                      <div class="first-name">
+                        <div class="input-group"> 
+                          <label for="basic-addon4">First name</label>
+                          <div class="input-group-text" id="basic-addon4">
+                            <select name="" data-testid="">
+                              <option value="Mr">Mr.</option>
+                              <option value="Ms">Ms.</option>
+                              <option value="Mrs">Mrs.</option>
+                            </select>
+                          </div>
+                          <input class="form-control text-input" type="text" aria-describedby="basic-addon4">
+                        </div>
+                      </div>
+                      <div class="middle-name">
+                        <label for="cleintMiddle-name">Middle name (Optional)</label>
+                        <input class="form-control" id="cleintMiddle-name" type="text">
+                      </div>
+                      <div class="last-name"> 
+                        <label for="last_name">Last name</label>
+                        <input class="form-control" id="last_name" type="text">
+                      </div>
+                    </div>
+                    <div class="client-fateOfBirth">
+                      <div class="title">
+                         Date of birth</div>
+                      <div class="content"> 
+                        <select name="">
+                          <option value="">Day</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                        <select name="">
+                          <option value="">Month</option>
+                          <option value="0">01 - January</option>
+                          <option value="1">02 - February</option>
+                          <option value="2">03 - March</option>
+                          <option value="3">04 - April</option>
+                          <option value="4">05 - May</option>
+                          <option value="5">06 - June</option>
+                          <option value="6">07 - July</option>
+                          <option value="7">08 - August</option>
+                          <option value="8">09 - September</option>
+                          <option value="9">10 - October</option>
+                          <option value="10">11 - November</option>
+                          <option value="11">12 - December</option>
+                        </select>
+                        <select name="">
+                          <option value="">Year</option>
+                          <option>2021</option>
+                          <option>2020</option>
+                          <option>2019</option>
+                          <option>2018</option>
+                          <option>2017</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                          <option>2008</option>
+                          <option>2007</option>
+                          <option>2006</option>
+                          <option>2005</option>
+                          <option>2004</option>
+                          <option>2003</option>
+                          <option>2002</option>
+                          <option>2001</option>
+                          <option>2000</option>
+                          <option>1999</option>
+                          <option>1998</option>
+                          <option>1997</option>
+                          <option>1996</option>
+                          <option>1995</option>
+                          <option>1994</option>
+                          <option>1993</option>
+                          <option>1992</option>
+                          <option>1991</option>
+                          <option>1990</option>
+                          <option>1989</option>
+                          <option>1988</option>
+                          <option>1987</option>
+                          <option>1986</option>
+                          <option>1985</option>
+                          <option>1984</option>
+                          <option>1983</option>
+                          <option>1982</option>
+                          <option>1981</option>
+                          <option>1980</option>
+                          <option>1979</option>
+                          <option>1978</option>
+                          <option>1977</option>
+                          <option>1976</option>
+                          <option>1975</option>
+                          <option>1974</option>
+                          <option>1973</option>
+                          <option>1972</option>
+                          <option>1971</option>
+                          <option>1970</option>
+                          <option>1969</option>
+                          <option>1968</option>
+                          <option>1967</option>
+                          <option>1966</option>
+                          <option>1965</option>
+                          <option>1964</option>
+                          <option>1963</option>
+                          <option>1962</option>
+                          <option>1961</option>
+                          <option>1960</option>
+                          <option>1959</option>
+                          <option>1958</option>
+                          <option>1957</option>
+                          <option>1956</option>
+                          <option>1955</option>
+                          <option>1954</option>
+                          <option>1953</option>
+                          <option>1952</option>
+                          <option>1951</option>
+                          <option>1950</option>
+                          <option>1949</option>
+                          <option>1948</option>
+                          <option>1947</option>
+                          <option>1946</option>
+                          <option>1945</option>
+                          <option>1944</option>
+                          <option>1943</option>
+                          <option>1942</option>
+                          <option>1941</option>
+                          <option>1940</option>
+                          <option>1939</option>
+                          <option>1938</option>
+                          <option>1937</option>
+                          <option>1936</option>
+                          <option>1935</option>
+                          <option>1934</option>
+                          <option>1933</option>
+                          <option>1932</option>
+                          <option>1931</option>
+                          <option>1930</option>
+                          <option>1929</option>
+                          <option>1928</option>
+                          <option>1927</option>
+                          <option>1926</option>
+                          <option>1925</option>
+                          <option>1924</option>
+                          <option>1923</option>
+                          <option>1922</option>
+                          <option>1921</option>
+                          <option>1920</option>
+                          <option>1919</option>
+                          <option>1918</option>
+                          <option>1917</option>
+                          <option>1916</option>
+                          <option>1915</option>
+                          <option>1914</option>
+                          <option>1913</option>
+                          <option>1912</option>
+                          <option>1911</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="client-Nationality">
+                      <div class="title">
+                         Nationality</div>
+                      <div class="content"> 
+                        <div class="select-box"> 
+                          <div class="options-container"> 
+                            <div class="option"> 
+                              <input class="radio form-input" type="radio" id="egypt">
+                              <label for="egypt">Egypt</label>
+                            </div>
+                            <div class="option"> 
+                              <input class="radio" type="radio" id="saudiArabia">
+                              <label for="saudiArabia">Saudi Arabia</label>
+                            </div>
+                            <div class="option"> 
+                              <input class="radio" type="radio" id="UnitedArabEmirates">
+                              <label for="UnitedArabEmirates">United Arab Emirates</label>
+                            </div>
+                            <div class="option"> 
+                              <input class="radio" type="radio" id="Albania">
+                              <label for="Albania">Albania</label>
+                            </div>
+                            <div class="option"> 
+                              <input class="radio" type="radio" id="Algeria">
+                              <label for="Algeria">Algeria</label>
+                            </div>
+                          </div>
+                          <div class="selected"> 
+                            <div class="text">Select Country</div><i class="fas fa-chevron-up"></i>
+                          </div>
+                          <div class="search-box"> 
+                            <input type="text" placeholder="type here ..">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-doucments"> 
+                      <div class="title">
+                         Travel document</div>
+                      <div class="content"> 
+                        <div class="document-type"> 
+                          <label for="Documenttype">Document type</label>
+                          <select id="Documenttype" name=""> 
+                            <option value="0">Passport</option>
+                          </select>
+                        </div>
+                        <div class="passport-number"> 
+                          <label for="Passportnumber">Passport number</label>
+                          <input id="Passportnumber" type="text">
+                        </div>
+                        <div class="issuing-country">
+                          <label for="issuing-select-box">Issuing country</label>
+                          <div class="select-box" id="issuing-select-box"> 
+                            <div class="options-container"> 
+                              <div class="option"> 
+                                <input class="radio form-input" type="radio" id="egypt">
+                                <label for="egypt">Egypt</label>
+                              </div>
+                              <div class="option"> 
+                                <input class="radio" type="radio" id="saudiArabia">
+                                <label for="saudiArabia">Saudi Arabia</label>
+                              </div>
+                              <div class="option"> 
+                                <input class="radio" type="radio" id="UnitedArabEmirates">
+                                <label for="UnitedArabEmirates">United Arab Emirates</label>
+                              </div>
+                              <div class="option"> 
+                                <input class="radio" type="radio" id="Albania">
+                                <label for="Albania">Albania</label>
+                              </div>
+                              <div class="option"> 
+                                <input class="radio" type="radio" id="Algeria">
+                                <label for="Algeria">Algeria</label>
+                              </div>
+                            </div>
+                            <div class="selected"> 
+                              <div class="text">Select Country</div><i class="fas fa-chevron-up"></i>
+                            </div>
+                            <div class="search-box"> 
+                              <input type="text" placeholder="type here ..">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-PassportExpiryDate">
+                      <div class="title">
+                         Passport Expiry Date</div>
+                      <div class="content"> 
+                        <select class="day" name="">
+                          <option value="">Day</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                          <option>13</option>
+                          <option>14</option>
+                          <option>15</option>
+                          <option>16</option>
+                          <option>17</option>
+                          <option>18</option>
+                          <option>19</option>
+                          <option>20</option>
+                          <option>21</option>
+                          <option>22</option>
+                          <option>23</option>
+                          <option>24</option>
+                          <option>25</option>
+                          <option>26</option>
+                          <option>27</option>
+                          <option>28</option>
+                          <option>29</option>
+                          <option>30</option>
+                          <option>31</option>
+                        </select>
+                        <select class="month" name="">
+                          <option value="">Month</option>
+                          <option value="0">01 - January</option>
+                          <option value="1">02 - February</option>
+                          <option value="2">03 - March</option>
+                          <option value="3">04 - April</option>
+                          <option value="4">05 - May</option>
+                          <option value="5">06 - June</option>
+                          <option value="6">07 - July</option>
+                          <option value="7">08 - August</option>
+                          <option value="8">09 - September</option>
+                          <option value="9">10 - October</option>
+                          <option value="10">11 - November</option>
+                          <option value="11">12 - December</option>
+                        </select>
+                        <select class="year" name="">
+                          <option value="">Year</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                          <option>2026</option>
+                          <option>2027</option>
+                          <option>2028</option>
+                          <option>2029</option>
+                          <option>2030</option>
+                          <option>2031</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="client-flight-bounus"> 
+                      <div class="content"> 
+                        <div class="frequent-flyer-section">
+                          <div class="main_btn_header">
+                            <input class="checkbox" id="frequent-flyer" type="checkbox">
+                            <label class="mainlabel" for="frequent-flyer">Add frequent flyer details (optional)</label>
+                          </div>
+                          <div class="toggle-menu">
+                            <div class="input-group"> 
+                              <label for="Frequentflyerprogramme ">Frequent flyer programme</label>
+                              <div class="select-box" id="Frequentflyerprogramme"> 
+                                <div class="options-container"> 
+                                  <div class="option"> 
+                                    <input class="radio form-input" type="radio" id="egypt">
+                                    <label for="egypt">Egypt</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="saudiArabia">
+                                    <label for="saudiArabia">Saudi Arabia</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="UnitedArabEmirates">
+                                    <label for="UnitedArabEmirates">United Arab Emirates</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="Albania">
+                                    <label for="Albania">Albania</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="Algeria">
+                                    <label for="Algeria">Algeria</label>
+                                  </div>
+                                </div>
+                                <div class="selected"> 
+                                  <div class="text">Select Country</div><i class="fas fa-chevron-up"></i>
+                                </div>
+                                <div class="search-box"> 
+                                  <input type="text" placeholder="type here ..">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="input-group"> 
+                              <label for="Frequentflyernumber">Frequent flyer number</label>
+                              <input id="Frequentflyernumber" type="text">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="meal-assistance-section"> 
+                          <div class="main_btn_header">
+                            <input class="checkbox" id="meal-assistance" type="checkbox">
+                            <label class="mainlabel" for="meal-assistance"> Add meal and special assistance (optional)</label>
+                          </div>
+                          <div class="toggle-menu">
+                            <div class="btn-container">
+                              <button class="meal active">Meal</button>
+                              <button class="special-assistance">Special assistance</button>
+                            </div>
+                            <div class="warpper"> 
+                              <div class="select-box one">
+                                <div class="options-container"> 
+                                  <div class="option"> 
+                                    <input class="radio form-input" type="radio" id="egypt">
+                                    <label for="egypt">Egypt</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="saudiArabia">
+                                    <label for="saudiArabia">Saudi Arabia</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="UnitedArabEmirates">
+                                    <label for="UnitedArabEmirates">United Arab Emirates</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="Albania">
+                                    <label for="Albania">Albania</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="Algeria">
+                                    <label for="Algeria">Algeria</label>
+                                  </div>
+                                </div>
+                                <div class="selected"> 
+                                  <div class="text">meal</div><i class="fas fa-chevron-up"></i>
+                                </div>
+                                <div class="search-box"> 
+                                  <input type="text" placeholder="type here ..">
+                                </div>
+                              </div>
+                              <div class="select-box two"> 
+                                <div class="options-container"> 
+                                  <div class="option"> 
+                                    <input class="radio form-input" type="radio" id="egypt">
+                                    <label for="egypt">Egypt</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="saudiArabia">
+                                    <label for="saudiArabia">Saudi Arabia</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="UnitedArabEmirates">
+                                    <label for="UnitedArabEmirates">United Arab Emirates</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="Albania">
+                                    <label for="Albania">Albania</label>
+                                  </div>
+                                  <div class="option"> 
+                                    <input class="radio" type="radio" id="Algeria">
+                                    <label for="Algeria">Algeria</label>
+                                  </div>
+                                </div>
+                                <div class="selected"> 
+                                  <div class="text">special assistance</div><i class="fas fa-chevron-up"></i>
+                                </div>
+                                <div class="search-box"> 
+                                  <input type="text" placeholder="type here ..">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="warning"> 
+                              <div class="svg">   
+                                <svg class="sc-hMqMXs dQgVbp" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 15 15" preserveAspectRatio="xMidYMid meet" size="32" width="32" height="32">
+                                  <path d="M8.758 11.602c-.38.15-.683.264-.91.343-.226.079-.49.118-.789.118-.46 0-.818-.112-1.073-.337a1.087 1.087 0 0 1-.382-.854c0-.134.01-.272.029-.412.019-.14.05-.298.091-.474l.476-1.68c.042-.162.078-.315.107-.457a2.01 2.01 0 0 0 .042-.396c0-.214-.044-.364-.132-.448-.09-.084-.258-.126-.508-.126-.123 0-.249.019-.378.057-.129.039-.24.075-.331.11l.126-.518c.31-.127.609-.235.893-.325a2.64 2.64 0 0 1 .807-.137c.457 0 .809.112 1.057.332a1.1 1.1 0 0 1 .371.86c0 .073-.008.201-.025.385a2.58 2.58 0 0 1-.095.507L7.66 9.825a4.739 4.739 0 0 0-.105.46 2.49 2.49 0 0 0-.045.391c0 .223.049.375.149.455.099.08.272.121.517.121a1.5 1.5 0 0 0 .391-.06c.145-.04.25-.076.316-.106l-.127.516zm-.084-6.798a1.13 1.13 0 0 1-.797.307 1.14 1.14 0 0 1-.8-.307.982.982 0 0 1-.333-.746c0-.29.112-.54.333-.747a1.13 1.13 0 0 1 .8-.311c.31 0 .577.103.797.31a.99.99 0 0 1 .331.748c0 .292-.11.54-.331.746zM7.5 15C3.343 15 0 11.636 0 7.545 0 3.364 3.343 0 7.5 0S15 3.364 15 7.545C14.91 11.636 11.566 15 7.5 15zM7.5.91C3.886.91.904 3.91.904 7.544c0 3.637 2.891 6.546 6.506 6.546 3.614 0 6.506-2.91 6.506-6.546S11.024.91 7.5.91z"></path>
+                                </svg>
+                              </div>
+                              <p class="text">Please contact the airline to confirm<span> the meal request.</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client-baggage"> 
+                      <div class="title"> 
+                        <svg class="sc-hMqMXs fgXQuF" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 21 16" preserveAspectRatio="xMidYMid meet" size="22" width="22" height="22">
+                          <path d="M15.9 4.313h.343v-.96c0-.307-.234-.555-.516-.555h-1.379c-.285 0-.515.251-.515.555v.123h-.618v-.48c0-.463.35-.84.78-.84h2.079c.43 0 .78.377.78.84v1.317h3.08c.571 0 1.041.504 1.041 1.122v6.304c0 .612-.461 1.112-1.029 1.122-.028.388-.331.695-.7.695-.368 0-.672-.308-.7-.695h-2.44V5.143c0-.301-.075-.585-.207-.83z" fill-opacity=".75" fill-rule="nonzero"></path>
+                          <path d="M9.643 3.635v-.931c0-.245-.178-.437-.383-.437H7.595c-.205 0-.38.193-.38.437v.93h2.428zm4.923 10.9c-.122.496-.548.865-1.053.865-.501 0-.922-.36-1.05-.848H4.379c-.128.488-.55.848-1.05.848-.505 0-.93-.37-1.053-.866C1.553 14.416 1 13.742 1 12.941V5.246c0-.883.668-1.611 1.499-1.611h3.486V2.268C5.985 1.572 6.51 1 7.169 1h2.51c.657 0 1.184.573 1.184 1.268v1.367h3.479c.829 0 1.499.727 1.499 1.61v7.696c0 .8-.551 1.474-1.276 1.593h.001z"></path>
+                        </svg><span>Baggage info </span><i class="fas fa-chevron-up"></i>
+                      </div>
+                      <div class="content"> 
+                        <div class="duration"> 
+                          <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span></div>
+                        </div>
+                        <div class="container-fluid"> 
+                          <div class="row"> 
+                            <div class="col-md-6">
+                              <ul> 
+                                <li><span class="desc"> <i class="fas fa-suitcase-rolling"></i>Cabin baggage</span><span class="info">7 KG (max 1 Bag)</span></li>
+                                <li><span class="desc"> <i class="fas fa-suitcase-rolling"></i>Cabin baggage</span><span class="info">2 Bags</span></li>
+                              </ul>
+                            </div>
+                            <div class="col-md-6 direction">
+                              <p>If you require additional baggage,<br>please contact us after the booking is completed</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="enter-contact-details"> 
+                <div class="title">Enter contact details</div>
+                <div class="client-name"> 
+                  <div class="first-name">
+                    <div class="input-group"> 
+                      <label for="basic-addon5">First name</label>
+                      <div class="input-group-text" id="basic-addon5">
+                        <select name="" data-testid="">
+                          <option value="Mr">Mr.</option>
+                          <option value="Ms">Ms.</option>
+                          <option value="Mrs">Mrs.</option>
+                        </select>
+                      </div>
+                      <input class="form-control text-input" type="text" aria-describedby="basic-addon4">
+                    </div>
+                  </div>
+                  <div class="last-name"> 
+                    <label for="last_name2">Last name</label>
+                    <input class="form-control" id="last_name2" type="text">
+                  </div>
+                </div>
+                <div class="client-email"> 
+                  <label for="Emailaddress">Email address</label>
+                  <input id="Emailaddress" type="email">
+                </div>
+                <div class="client-phoneNumber"> 
+                  <label for="#phone2">Mobile number</label>
+                  <input id="phone2" name="phone" type="tel">
+                </div>
+              </section>
+            </div>
+            <section class="side-bar">
+              <div class="side-bar-container">
+                <div class="flight-summary">
+                  <div class="title"> <span>Flight summary</span>
+                    <button class="flight-details">
+                       Flight details</button>
+                    <div class="flight-details-menu">
+                      <div class="con-btn">
+                        <div class="close-btn">
+                          <button><i class="fas fa-times"></i>Close</button>
+                        </div>
+                        <div class="supmenu">
+                          <div class="menu-duration"> 
+                            <div class="Departure-arrival-section"> <i class="fas fa-plane-departure"> </i>Departure, <span class="departure-location">Madinah </span><i class="fas fa-arrow-right"> </i>Arrival, <span class="arrival-location">Cairo</span>
+                              <div class="total-duration">Total duration: <span>07h 10m</span></div>
+                            </div>
+                            <div class="submenu-second">
+                              <div class="ticket">
+                                <div class="start-airport"> <img src="img/ksa.png" alt="">
+                                  <ul> 
+                                    <li>Saudia</li>
+                                    <li>SV-1429</li>
+                                    <li>AIRBUS</li>
+                                    <li>Economy class</li>
+                                  </ul>
+                                </div>
+                                <div class="flight-deprature">
+                                  <ul> 
+                                    <li class="timeing">MED<span class="time">06:15</span></li>
+                                    <li class="day">Tue, 13 Jul </li>
+                                    <li class="airport">Prince ali abdelbaky airport</li>
+                                    <li class="airport-location">Madinah, Saudia Arabia </li>
+                                  </ul>
+                                </div>
+                                <div class="flight-arrivall">
+                                  <ul> 
+                                    <li class="timeing">MED<span class="time">06:15</span></li>
+                                    <li class="day">Tue, 13 Jul </li>
+                                    <li class="airport">Prince ali abdelbaky airport</li>
+                                    <li class="airport-location">Madinah, Saudia Arabia </li>
+                                    <li>jedahh ,Sauidia Arabia </li>
+                                    <li class="terminal">Terminal 1 (new airport)</li>
+                                  </ul>
+                                </div>
+                                <div class="card-foot"> 
+                                  <div class="flight-time"><span>01h 00m</span></div>
+                                </div>
+                              </div>
+                              <div class="waiting-time">
+                                <p> <i class="far fa-clock"></i>Waiting Time in JED, Jeddah</p><span class="time">03h 50m</span>
+                              </div>
+                              <div class="ticket">
+                                <div class="start-airport"> <img src="img/ksa.png" alt="">
+                                  <ul> 
+                                    <li>Saudia</li>
+                                    <li>SV-1429</li>
+                                    <li>AIRBUS</li>
+                                    <li>Economy class</li>
+                                  </ul>
+                                </div>
+                                <div class="flight-deprature">
+                                  <ul> 
+                                    <li class="timeing">MED<span class="time">06:15</span></li>
+                                    <li class="day">Tue, 13 Jul </li>
+                                    <li class="airport">Prince ali abdelbaky airport</li>
+                                    <li class="airport-location">Madinah, Saudia Arabia </li>
+                                  </ul>
+                                </div>
+                                <div class="flight-arrivall">
+                                  <ul> 
+                                    <li class="timeing">MED<span class="time">06:15</span></li>
+                                    <li class="day">Tue, 13 Jul </li>
+                                    <li class="airport">Prince ali abdelbaky airport</li>
+                                    <li class="airport-location">Madinah, Saudia Arabia </li>
+                                    <li>jedahh ,Sauidia Arabia </li>
+                                    <li class="terminal">Terminal 1 (new airport)</li>
+                                  </ul>
+                                </div>
+                                <div class="card-foot"> 
+                                  <div class="flight-time"><span>01h 00m</span></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flight-card"> 
+                    <div class="start-airport"><img src="img/ksa.png" alt=""></div>
+                    <div class="flight-start date"><span class="time">06:15</span><span class="timing">MED</span></div>
+                    <div class="flight-info">
+                      <div class="stop-count"><span class="count">1 stop </span><i class="fas fa-plane"></i></div>
+                      <div class="flight-moreinfo">
+                        <div class="flight-duration"><span class="time"><i class="fas fa-clock"></i><span>10h 50m</span></span></div>
+                      </div>
+                    </div>
+                    <div class="flight-arrive date text-center"><span class="time">06:15</span><span class="timing">CAI</span></div>
+                  </div>
+                </div>
+                <div class="fare-deatails">
+                  <div class="title"> <span>Fare details</span>
+                    <button class="fare-deatails_btn">Cancel & change</button>
+                    <div class="cancel-change-menu">
+                      <div class="con-btn">
+                        <div class="close-btn">
+                          <button><i class="fas fa-times"></i>Close</button>
+                        </div>
+                        <div class="supmenu">
+                          <table class="text-center"> 
+                            <tr> 
+                              <th class="border-none"> </th>
+                              <th class="color-grey">Per adult</th>
+                            </tr>
+                            <tr> 
+                              <th class="border-l-none">Cancellation Fees</th>
+                              <th> <i class="far fa-times-circle"></i><span>Not primmited</span></th>
+                            </tr>
+                            <tr> 
+                              <th class="border-l-none">Date Change Fees</th>
+                              <th> <i class="far fa-check-circle true"></i><span class="true">AED 270</span></th>
+                            </tr>
+                          </table>
+                          <div class="note"> 
+                            <p>All fees are applicable up to 28 hours before departure time. Additional fees may apply after that.</p>
+                          </div>
+                          <div class="FAQ-cancelation">
+                            <div class="header"> 
+                              <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 30 30" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                                <g fill="none" fill-rule="evenodd">
+                                  <g>
+                                    <g>
+                                      <g transform="translate(-305 -530) translate(295 510) translate(10 20)">
+                                        <circle cx="15" cy="15" r="15" fill="#E9F4F5"></circle>
+                                        <g fill="#231F20" fill-rule="nonzero" stroke="#E9F4F5" stroke-width=".1">
+                                          <path d="M.005.44v20.769c0 .22.178.4.4.4H15.58c.22 0 .4-.18.4-.4V4.434c0-.009-.005-.016-.005-.025-.002-.035-.01-.07-.02-.103-.005-.013-.008-.025-.014-.037-.02-.044-.046-.083-.08-.117L11.868.158c-.034-.034-.074-.061-.117-.08-.012-.005-.025-.01-.037-.013-.033-.012-.068-.019-.104-.021-.006.001-.014-.003-.023-.003H.404c-.22 0-.4.178-.4.399zm14.612 3.595h-2.63v-2.63l2.63 2.63zM.803.839h10.385v3.595c0 .22.179.4.4.4h3.594V20.81H.803V.84z" transform="translate(6.658 4.11)"></path>
+                                        </g>
+                                        <path fill="#AFC1DE" d="M11.451 4.93l10.385-.06.019 20.05-14.398.077V8.924h3.494c.277 0 .5-.224.5-.5V4.93z" transform="matrix(-1 0 0 1 29.312 0)"></path>
+                                        <rect width="11" height="1" x="9" y="11" fill="#FFF" rx=".5"></rect>
+                                        <rect width="11" height="1" x="9" y="14" fill="#FFF" rx=".5"></rect>
+                                        <rect width="11" height="1" x="9" y="17" fill="#FFF" rx=".5"></rect>
+                                        <rect width="11" height="1" x="9" y="20" fill="#FFF" rx=".5"></rect>
+                                        <circle cx="7.457" cy="4.562" r="4.15" fill="#3665AC" stroke="#231F20" stroke-width=".7"></circle>
+                                        <g fill="#FFF" fill-rule="nonzero">
+                                          <path d="M.433 3.467c.24 0 .434-.194.434-.434v-2.6C.867.194.673 0 .433 0 .194 0 0 .194 0 .433v2.6c0 .24.194.434.433.434zM.433 5.2c.24 0 .434-.194.434-.433v-.434c0-.239-.194-.433-.434-.433-.239 0-.433.194-.433.433v.434c0 .239.194.433.433.433z" transform="translate(6.895 2)"></path>
+                                        </g>
+                                        <path fill="#FFF" d="M18.645 5.467L21.405 8.258 18.645 8.145z"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <p>
+                                 Cancellation & change details<br>Learn more about the rules and fees</p>
+                              <div class="text-right"><i class="fas fa-chevron-up"></i></div>
+                            </div>
+                            <div class="toggle-menu"> 
+                              <ul> 
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="FAQ"> 
+                            <div class="header"> 
+                              <svg class="sc-hMqMXs hlKksy" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 32 32" preserveAspectRatio="xMidYMid meet" size="30" width="30" height="30">
+                                <g fill="none" fill-rule="evenodd">
+                                  <g>
+                                    <g>
+                                      <g>
+                                        <g transform="translate(-60 -709) translate(50 534) translate(0 155) translate(10 20)">
+                                          <circle cx="17" cy="15" r="15" fill="#EAEFF6"></circle>
+                                          <path fill="#AFC1DE" stroke="#231F20" stroke-width=".812" d="M20.737 11.976c2.02 0 3.847.818 5.17 2.141s2.142 3.151 2.142 5.17c0 1.39-.388 2.689-1.061 3.795h0l1.324 3.712-4.196-1.021c-1.01.527-2.16.825-3.379.825-2.018 0-3.846-.818-5.17-2.141-1.322-1.323-2.14-3.151-2.14-5.17s.818-3.847 2.14-5.17c1.324-1.323 3.152-2.141 5.17-2.141z"></path>
+                                          <g fill="#FFF" fill-rule="nonzero">
+                                            <path d="M.544 0C.26 0-.013.25 0 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C1.074.25.85 0 .544 0zM2.544 0C2.26 0 1.987.25 2 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C3.074.25 2.85 0 2.544 0zM4.544 0C4.26 0 3.987.25 4 .543c.014.295.24.544.544.544.284 0 .557-.25.543-.544C5.074.25 4.85 0 4.544 0z" transform="rotate(-1 1084.062 -1037.109)"></path>
+                                          </g>
+                                          <path fill="#AFC1DE" stroke="#231F20" stroke-width=".8" d="M10.196 1.4c-2.513 0-4.788 1.019-6.435 2.665C2.114 5.712 1.096 7.987 1.096 10.5c0 1.713.473 3.316 1.297 4.684h0L.734 19.83l5.288-1.24c1.25.646 2.67 1.011 4.174 1.011 2.513 0 4.788-1.019 6.435-2.665 1.646-1.647 2.665-3.922 2.665-6.435 0-2.513-1.019-4.788-2.665-6.435C14.984 2.42 12.709 1.4 10.196 1.4z"></path>
+                                          <g transform="matrix(-1 0 0 1 19.082 1.954)">
+                                            <mask id="2n91xy0d5b" fill="#fff">
+                                              <ellipse cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                            </mask>
+                                            <ellipse fill="#3665AC" cx="8.193" cy="8.597" rx="8" ry="8.5"></ellipse>
+                                            <ellipse cx="9.783" cy="8.751" fill="#AFC1DE" mask="url(#2n91xy0d5b)" rx="8" ry="9.5"></ellipse>
+                                          </g>
+                                          <g fill="#FFF" fill-rule="nonzero">
+                                            <path d="M2.704 8.417c-.284 0-.557.25-.543.544.013.294.238.543.543.543.284 0 .557-.25.543-.543-.013-.295-.238-.544-.543-.544zM2.704 0C1.213 0 0 1.213 0 2.704c0 .3.243.543.543.543.3 0 .544-.243.544-.543 0-.892.725-1.617 1.617-1.617s1.617.725 1.617 1.617-.725 1.617-1.617 1.617c-.3 0-.543.243-.543.543v2.217c0 .3.243.544.543.544.3 0 .543-.244.543-.544V5.353C4.48 5.101 5.408 4.01 5.408 2.704 5.408 1.213 4.195 0 2.704 0z" transform="translate(7.106 5.529)"></path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </g>
+                              </svg>
+                              <p>
+                                 Frequently asked questions <br>Find useful answers to common questions here</p>
+                              <div class="text-right"><i class="fas fa-chevron-up"></i></div>
+                            </div>
+                            <div class="toggle-menu"> 
+                              <ul> 
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                                <li>For each passenger except infants, there will be a Tajawal fee of AED 40 in case of cancellation or change in itinerary.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content"> 
+                    <ul class="list"> 
+                      <li class="traveller-section"><span class="toggle-btn">Traveller 1 (Adult)<i class="fas fa-chevron-down"></i></span>
+                        <ul class="toggle-list"> 
+                          <li> <span class="desc">Fare </span><span class="info">AED 520.00</span></li>
+                          <li> <span class="desc">Fare </span><span class="info">AED 520.00</span></li>
+                        </ul>
+                      </li>
+                      <li class="service"><span class="desc">Service fee</span><span class="info">AED 520.00</span></li>
+                      <li class="VAT"><span class="desc">VAT</span><span class="info">AED 520.00</span></li>
+                    </ul>
+                    <div class="total-vat"> <span class="desc">Total (incl. VAT)</span><span class="cost">AED 916.70</span></div>
+                    <button class="continue-to-final-details"> Continue to final details</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container-fluid"> 
+        <div class="row"> 
+          <div class="col-md-4">
+            <div class="call-us-section"><img src="img/airlines-3.png" alt=""><span>Call us at :</span><a class="contact-us" href="tel:0100-000-0000"><strong>0100-000-0000</strong></a></div>
+          </div>
+          <div class="col-md-4">
+            <div class="copyright">
+              <p>Copyright &copy; 2021 <i class="fa fa-value" aria-hidden="true">&nbsp;</i><a href="#">Matar. </a>All Rights Reserved.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="payment-section">
+              <ul class="list-item"> 
+                <li class="item"> <a href=""><img src="img/visa.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="img/discover.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="img/paypal.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="img/american.png" alt="alt"></a></li>
+                <li class="item"> <a href=""><img src="img/mastercard.png" alt="alt"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/bootstrap.min.js"> </script>
+    <script src="js/intlTelInput.js"> </script>
+    <script src="js/select_flight.js"></script>
+  </body>
+</html>
