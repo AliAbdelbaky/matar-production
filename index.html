@@ -1200,6 +1200,158 @@
                     <button class="sort"> <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"></path></svg>SORT </button>
                     <button class="filter"> <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"></path></svg>FILTER</button>
                   </div>
+                  <div class="filter-btn-toggle-list"> 
+                    <div class="header"> <i class="close-btn fas fa-times"> </i>Filters</div>
+                    <div class="main-content"> 
+                      <div class="stops-count">
+                        <div class="head"> 
+                          <div class="icon"> <svg class="MWeb-MuiSvgIcon-root MWeb-jss1560" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path></svg>Stops</div>
+                        </div>
+                        <div class="content"> 
+                          <input id="nonestops" type="checkbox" name="" value="nonstop">
+                          <lable for="nonestops">Nonstop</lable>
+                          <input id="1stop" type="checkbox" name="" value="1 stop">
+                          <lable for="1stop">1 Stop</lable>
+                          <input id="morethan2stops" type="checkbox" name="" value="+2 stops">
+                          <lable for="morethan2stops">2+ Stops</lable>
+                        </div>
+                      </div>
+                      <div class="baggage-info"> 
+                        <div class="head"> 
+                          <svg class="sc-hMqMXs fgXQuF" focusable="false" color="inherit" fill="currentcolor" aria-hidden="true" role="presentation" viewBox="0 0 21 16" preserveAspectRatio="xMidYMid meet" size="22" width="22" height="22">
+                            <path d="M15.9 4.313h.343v-.96c0-.307-.234-.555-.516-.555h-1.379c-.285 0-.515.251-.515.555v.123h-.618v-.48c0-.463.35-.84.78-.84h2.079c.43 0 .78.377.78.84v1.317h3.08c.571 0 1.041.504 1.041 1.122v6.304c0 .612-.461 1.112-1.029 1.122-.028.388-.331.695-.7.695-.368 0-.672-.308-.7-.695h-2.44V5.143c0-.301-.075-.585-.207-.83z" fill-opacity=".75" fill-rule="nonzero"></path>
+                            <path d="M9.643 3.635v-.931c0-.245-.178-.437-.383-.437H7.595c-.205 0-.38.193-.38.437v.93h2.428zm4.923 10.9c-.122.496-.548.865-1.053.865-.501 0-.922-.36-1.05-.848H4.379c-.128.488-.55.848-1.05.848-.505 0-.93-.37-1.053-.866C1.553 14.416 1 13.742 1 12.941V5.246c0-.883.668-1.611 1.499-1.611h3.486V2.268C5.985 1.572 6.51 1 7.169 1h2.51c.657 0 1.184.573 1.184 1.268v1.367h3.479c.829 0 1.499.727 1.499 1.61v7.696c0 .8-.551 1.474-1.276 1.593h.001z"></path>
+                          </svg>Baggage 
+                        </div>
+                        <div class="content"> 
+                          <form action=""> 
+                            <div class="form-check active">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                              <label class="form-check-label" for="flexRadioDefault1">Recommended Flights</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault">
+                              <label class="form-check-label" for="flexRadioDefault2">Lowest Price First</label>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="price-range"> 
+                        <div class="head"> 
+                          <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"></path>
+                          </svg>Price 
+                        </div>
+                        <div class="content"> 
+                          <div class="content-head"> 
+                            <div class="desc"> <span class="info">Flights up to</span>
+                              <div class="input-group">
+                                <div class="input-group-text" id="basic-addon1">AED</div><span class="flight-value" aria-describedby="basic-addon1">3000</span>
+                              </div>
+                            </div>
+                            <div class="range"> 
+                              <input type="range" min="1000" max="3000" steps="1" value="3000">
+                              <div class="range-values">
+                                <div class="value-left"> <span class="price-kind">AED </span><span class="value">1000</span></div>
+                                <div class="value-right"><span class="price-kind">AED </span><span class="value">3000</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flight-time"> 
+                        <div class="head"> 
+                          <div class="icon"> <i class="fas fa-clock"></i>Flight Time</div>
+                        </div>
+                        <div class="content"> 
+                          <div class="outband-debprature">
+                             Outbound departure</div>
+                          <div class="time"> 
+                            <div class="flight-info-cai"> <span class="cai">CAI - DXB |</span><span class="date">18 Aug </span></div>
+                          </div>
+                          <div class="day-time"> 
+                            <div class="box active"> <span class="header">Morning </span><span class="desc">06:00 - 11:59</span></div>
+                            <div class="box"> <span class="header">Morning </span><span class="desc">06:00 - 11:59</span></div>
+                            <div class="box"> <span class="header">Morning </span><span class="desc">06:00 - 11:59</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="airlines"> 
+                        <div class="head"> <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.35 5.64c-.9-.64-1.12-1.88-.49-2.79.63-.9 1.88-1.12 2.79-.49.9.64 1.12 1.88.49 2.79-.64.9-1.88 1.12-2.79.49zM16 19H8.93c-1.48 0-2.74-1.08-2.96-2.54L4 7H2l1.99 9.76C4.37 19.2 6.47 21 8.94 21H16v-2zm.23-4h-4.88l-1.03-4.1c1.58.89 3.28 1.54 5.15 1.22V9.99c-1.63.31-3.44-.27-4.69-1.25L9.14 7.47c-.23-.18-.49-.3-.76-.38-.32-.09-.66-.12-.99-.06h-.02c-1.23.22-2.05 1.39-1.84 2.61l1.35 5.92C7.16 16.98 8.39 18 9.83 18h6.85l3.82 3 1.5-1.5-5.77-4.5z"></path></svg>Airlines </div>
+                        <div class="content">
+                          <form action=""> 
+                            <div class="form-check active">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                              <label class="form-check-label" for="flexRadioDefault1">Nile Air</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault">
+                              <label class="form-check-label" for="flexRadioDefault2">Etihad Airways</label>
+                            </div>
+                            <div class="form-check active">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault">
+                              <label class="form-check-label" for="flexRadioDefault1">Nile Air</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault">
+                              <label class="form-check-label" for="flexRadioDefault2">Etihad Airways</label>
+                            </div>
+                            <div class="form-check active">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault">
+                              <label class="form-check-label" for="flexRadioDefault1">Nile Air</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault">
+                              <label class="form-check-label" for="flexRadioDefault2">Etihad Airways</label>
+                            </div>
+                          </form>
+                          <button class="see-all-airlines">
+                             See all airlines</button>
+                        </div>
+                      </div>
+                      <div class="select-airport">
+                        <div class="head"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+<g fill="none" fill-rule="evenodd">
+<path d="M0 0H24V24H0z"/>
+<path fill="#333" d="M20 8l-.209 1.6h-1.673V12l1.359-.001-.287 2.2c-.073.553-.57 1.001-1.124 1.001h-3.714V20H9.648v-4.8H5.934c-.548 0-1.052-.45-1.124-1.001l-.287-2.2 1.36.001V9.6H4.208L4 8h16zM9.647 9.6H6.824V12h2.823V9.6zm3.765 0h-2.824V12h2.824V9.6zm3.764 0h-2.823V12h2.823V9.6zM12.408 4c.563 0 1.004.45 1.004 1.004V6.4h3.764l-.157.8H6.98l-.156-.8h3.764V5.004c0-.564.45-1.004 1.004-1.004z"/>
+</g>
+</svg>Airports 
+                        </div>
+                        <div class="content"> 
+                          <form action="">
+                            <div class="all-airports"> 
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                                <label class="form-check-label" for="flexRadioDefault1">All airport</label>
+                              </div>
+                            </div>
+                            <div class="fly-from"><span class="title">FLY FROM CAIRO</span>
+                              <div class="form-check"> 
+                                <input class="form-check-input" type="radio" name="flexRadioDefault">
+                                <label class="form-check-label" for="flexRadioDefault2">Cairo International Airport (CAI)</label>
+                              </div>
+                            </div>
+                            <div class="arrive-in"><span class="title">ARRIVE IN XHB</span>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault">
+                                <label class="form-check-label" for="flexRadioDefault1">Dubai International Airport (DXP)</label>
+                              </div>
+                            </div>
+                            <div class="other-option"><span class="title">OTHER OPTIONS</span>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault">
+                                <label class="form-check-label" for="flexRadioDefault2">XHB (XHB)</label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault">
+                                <label class="form-check-label" for="flexRadioDefault1">Dubai, United Arab Emirates (XNB-Dubai Bus Station) (XNB)</label>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="sort_btn_toggle_list"> 
                     <div class="toggle-list"> 
                       <div class="header"> 
