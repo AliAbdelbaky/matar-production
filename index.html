@@ -43,6 +43,7 @@
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
           </svg>
         </button>
+        <button class="back-bttn"> <i class="fas fa-arrow-right"></i></button>
       </div>
       <div class="mobile-navbar"> 
         <div class="header"> 
@@ -68,11 +69,38 @@
               <path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34a.9959.9959 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
             </svg>
           </button>
-          <button class="price-kind"> 
-            <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"></path>
-            </svg>
-          </button>
+          <div class="price-kind"> 
+            <button>
+              <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"></path>
+              </svg>
+            </button>
+            <div class="toggle-list"> 
+              <div class="close-btn"> <i class="fas fa-times"></i></div>
+              <form action="">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                  <label class="form-check-label" for="flexRadioDefault1"><span>SAR</span>Sauidi Riyal </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault">
+                  <label class="form-check-label" for="flexRadioDefault2"><span>AED</span>United Arab Emirates Dirham </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault">
+                  <label class="form-check-label" for="flexRadioDefault2"><span>QAR</span>Qatari Rial</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault">
+                  <label class="form-check-label" for="flexRadioDefault2"><span>KWD</span>Kuwaiti Dinar</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault">
+                  <label class="form-check-label" for="flexRadioDefault2"><span>EGP</span>Egyptian Pound</label>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
       <div class="mobile-search-box"> 
@@ -1171,6 +1199,37 @@
                   <div class="filter-sort-btn"> 
                     <button class="sort"> <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3L5 6.99h3V14h2V6.99h3L9 3zm7 14.01V10h-2v7.01h-3L15 21l4-3.99h-3z"></path></svg>SORT </button>
                     <button class="filter"> <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"></path></svg>FILTER</button>
+                  </div>
+                  <div class="sort_btn_toggle_list"> 
+                    <div class="toggle-list"> 
+                      <div class="header"> 
+                        <div class="icon"> <i class="close-btn fas fa-times"> </i>Sort by</div>
+                      </div>
+                      <div class="content">
+                        <form action="">
+                          <div class="form-check active">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" checked="">
+                            <label class="form-check-label" for="flexRadioDefault1">Recommended Flights</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault">
+                            <label class="form-check-label" for="flexRadioDefault2">Lowest Price First</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault">
+                            <label class="form-check-label" for="flexRadioDefault2">Shortest Duration First</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault">
+                            <label class="form-check-label" for="flexRadioDefault2">Earliest Deprature First</label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault">
+                            <label class="form-check-label" for="flexRadioDefault2">Latest Departure First</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
