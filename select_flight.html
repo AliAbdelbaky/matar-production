@@ -8,6 +8,7 @@
     <title>Airport</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/all.css">
   </head>
   <body> 
@@ -301,12 +302,12 @@
             <div class="input-group"> 
               <label for="#label3">Departure Date</label>
               <div class="border-div" id="label3"> 
-                <input class="input-date" type="date">
+                <input class="input-date" type="text" id="date-one-mobile" placeholder="deprature date">
               </div>
               <div class="round-trip">
                 <label for="#label4">Return Date</label>
                 <div class="border-div" id="label4"> 
-                  <input class="input-date" type="date">
+                  <input class="input-date" type="text" id="date-two-mobile" placeholder="arrivall date">
                 </div>
               </div>
             </div>
@@ -2041,7 +2042,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery.min.js"> </script>
+    <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/jquery-ui.min.js"> </script>
     <script src="js/bootstrap.min.js"> </script>
     <script src="js/intlTelInput.js"> </script>
     <script src="js/select_flight.js"></script>

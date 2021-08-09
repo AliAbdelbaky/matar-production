@@ -8,6 +8,7 @@
     <title>Airport</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/all.css">
   </head>
   <body> 
@@ -301,12 +302,12 @@
             <div class="input-group"> 
               <label for="#label3">Departure Date</label>
               <div class="border-div" id="label3"> 
-                <input class="input-date" type="date">
+                <input class="input-date" type="text" id="date-one-mobile" placeholder="deprature date">
               </div>
               <div class="round-trip">
                 <label for="#label4">Return Date</label>
                 <div class="border-div" id="label4"> 
-                  <input class="input-date" type="date">
+                  <input class="input-date" type="text" id="date-two-mobile" placeholder="arrivall date">
                 </div>
               </div>
             </div>
@@ -703,12 +704,12 @@
                             </div>
                             <div class="input-group expiry-security-container">
                               <div class="expiry-date"> 
-                                <label for="expiry-date">Expiry date </label>
-                                <input type="date" id="expiry-date">
+                                <label for="expiry-date-one-disktop">Expiry date </label>
+                                <input type="text" id="expiry-date-one-disktop" placeholder="Expiry date">
                               </div>
                               <div class="security-code">
                                 <label for="security-code">Security code</label>
-                                <input type="text" id="security-code" maxlength="4">
+                                <input type="text" id="security-code" maxlength="4" placeholder="Security code">
                               </div>
                             </div>
                             <div class="get-voucher-code"> 
@@ -1039,8 +1040,8 @@
                   </div>
                   <div class="expiry-date-cvc">
                     <div class="expiry-date">
-                      <input type="date" name="expirydate" autocomplete="off" required>
-                      <label class="label-name" for="expirydate"><span class="content-name">Expiry date</span></label>
+                      <input type="text" autocomplete="off" required id="expiry-date-mobile-two">
+                      <label class="label-name" for="expiry-date-mobile-two"><span class="content-name">Expiry date</span></label>
                     </div>
                     <div class="cvc">
                       <input type="text" name="CVC" autocomplete="off" required maxlength="4">
@@ -1080,7 +1081,7 @@
                   </div>
                   <div class="expiry-date-cvc">
                     <div class="expiry-date">
-                      <input type="date" name="expirydate" autocomplete="off" required>
+                      <input type="text" name="expirydate" autocomplete="off" required id="expiry-date-mobile-one">
                       <label class="label-name" for="expirydate"><span class="content-name">Expiry date</span></label>
                     </div>
                     <div class="cvc">
@@ -1326,7 +1327,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/jquery.min.js"> </script>
+    <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/jquery-ui.min.js"> </script>
     <script src="js/bootstrap.min.js"> </script>
     <script src="js/intlTelInput.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-masker/1.2.0/vanilla-masker.min.js"></script>
